@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #fullpage > div {
   text-align: center;
 }
@@ -22,11 +35,10 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   right: 0;
   width: 100px;
-  height: 100vh;
   padding: 0;
   margin: 0 auto;
   background: gray;
@@ -56,4 +68,8 @@
 }
 #menu > .act > a {
   color: white;
+}
+/* home bg */
+#home {
+  background-color: rgb(88, 89, 76);
 }

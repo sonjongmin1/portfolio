@@ -1,6 +1,5 @@
 $("#fullpage").fullpage({
-  sectionsColor: ["#daea99", "#bdeaf1", "#e8d4ef", "#f2ddc7"],
-  anchors: ["firstPage", "secondPage", "3rdPage", "4thpage"],
+  anchors: ["btn-1", "btn-2", "btn-3", "btn-4"],
   menu: "#menu",
   onLeave: function (index, nextIndex, direction) {
     // 메뉴 항목에 'act' 클래스 추가/제거
