@@ -8,20 +8,30 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.min.js"></script>
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/who.css" />
+    <link rel="stylesheet" href="./css/what.css" />
+    <link rel="stylesheet" href="./css/pt.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>portfolio</title>
   </head>
   <body>
-    <ul id="menu">
+    <ul class="menu">
+      <li><a href="#btn-1">HOME</a></li>
+      <li><a href="#btn-2">WHO I AM</a></li>
+      <li><a href="#btn-3">WHAT I CAN DO</a></li>
+      <li><a href="#btn-4">PORTFOLIO</a></li>
+      <li><a href="#">HIRE ME!</a></li>
+    </ul>
+    <ul id="menu-btn">
       <li class="act"><a href="#btn-1"></a></li>
       <li><a href="#btn-2"></a></li>
       <li><a href="#btn-3"></a></li>
       <li><a href="#btn-4"></a></li>
     </ul>
-
     <div id="fullpage">
       <!-- Home -->
-      <div class="section" id="home">home</div>
+      <div class="section" id="home"></div>
       <!-- Who I am -->
       <div class="section" id="who">who</div>
       <!-- What I can do -->
@@ -29,6 +39,8 @@
       <!-- Portfolio -->
       <div class="section" id="pt">pt</div>
     </div>
+    <!-- 스크롤 이미지 -->
+    <div class="scroll-icon"></div>
     <script src="./jquery/fullpage.js"></script>
     <script src="./js/main.js"></script>
   </body>
