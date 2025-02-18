@@ -1,3 +1,70 @@
 #home {
   background-color: rgb(88, 89, 76);
 }
+
+.st1-layout {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.st1-box1,
+.st1-box2 {
+  margin-top: 100px;
+}
+
+.st1-box1 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid #fff;
+}
+
+.st1-box2 {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  border: 1px solid #fff;
+}
+
+.st1-cir {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  background-image: url("../img/profile/porfile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.st1-tit {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bolder;
+  /* border: 1px solid #fff; */
+  margin-bottom: 5px;
+  text-shadow: 10px 10px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+.st1-con {
+  position: absolute;
+  right: 0;
+  width: 70%;
+  /* border: 1px solid #fff; */
+}
+
+.st1-con > li {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.st1-con > li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* text-shadow: 3px -5px 4px rgba(0, 0, 0, 0.5); */

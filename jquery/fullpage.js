@@ -10,6 +10,24 @@ $("#fullpage").fullpage({
       .removeClass("act");
     console.log(index);
     console.log("nextIndex" + nextIndex);
+
+    $(".menu-ln").removeClass("on");
+    switch (nextIndex) {
+      case 1:
+        $(".menu-ln").eq(0).addClass("on");
+        break;
+      case 2:
+        $(".menu-ln").eq(1).addClass("on");
+        break;
+      case 3:
+        $(".menu-ln").eq(2).addClass("on");
+        break;
+      case 4:
+        $(".menu-ln").eq(3).addClass("on");
+        break;
+      default:
+        break;
+    }
   },
 });
 

@@ -17,11 +17,36 @@
   </head>
   <body>
     <ul class="menu">
-      <li><a href="#btn-1">HOME</a></li>
-      <li><a href="#btn-2">WHO I AM</a></li>
-      <li><a href="#btn-3">WHAT I CAN DO</a></li>
-      <li><a href="#btn-4">PORTFOLIO</a></li>
-      <li><a href="#">HIRE ME!</a></li>
+      <li class="on">
+        <a href="#btn-1"
+          >HOME
+          <div class="menu-ln on"></div>
+        </a>
+      </li>
+      <li class="on">
+        <a href="#btn-2"
+          >WHO I AM
+          <div class="menu-ln"></div>
+        </a>
+      </li>
+      <li class="on">
+        <a href="#btn-3"
+          >WHAT I CAN DO
+          <div class="menu-ln"></div>
+        </a>
+      </li>
+      <li class="on">
+        <a href="#btn-4"
+          >PORTFOLIO
+          <div class="menu-ln"></div>
+        </a>
+      </li>
+      <li class="on">
+        <a href="#"
+          >HIRE ME!
+          <div class="menu-ln"></div>
+        </a>
+      </li>
     </ul>
     <ul id="menu-btn">
       <li class="act"><a href="#btn-1"></a></li>
@@ -31,7 +56,25 @@
     </ul>
     <div id="fullpage">
       <!-- Home -->
-      <div class="section" id="home"></div>
+      <div class="section" id="home">
+        <div class="st1-layout">
+          <div class="st1-box1">
+            <div class="st1-cir"></div>
+          </div>
+          <div class="st1-box2">
+            <div class="st1-tit">Developer</div>
+            <ul class="st1-con">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SCSS</li>
+              <li>JAVASCRIPT</li>
+              <li>JQUERY</li>
+              <li>REACT</li>
+              <li>MYSQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Who I am -->
       <div class="section" id="who">who</div>
       <!-- What I can do -->
@@ -42,6 +85,7 @@
     <!-- 스크롤 이미지 -->
     <div class="scroll-icon"></div>
     <script src="./jquery/fullpage.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
