@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/who.css" />
     <link rel="stylesheet" href="css/what.css" />
     <link rel="stylesheet" href="css/pt.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.min.js"></script>
   </head>
@@ -41,7 +42,7 @@
           <div class="menu-ln"></div>
         </a>
       </li>
-      <li class="on">
+      <li class="on" id="hire-btn">
         <a href="#"
           >HIRE ME!
           <div class="menu-ln"></div>
@@ -80,12 +81,120 @@
       <!-- What I can do -->
       <div class="section" id="what">what</div>
       <!-- Portfolio -->
-      <div class="section" id="pt">pt</div>
+      <div class="section" id="pt">
+        <div id="our_business">
+          <section id="title">
+            <div>
+              <h2>PORTFOLIO</h2>
+            </div>
+            <div id="btn">
+              <button type="button">〈</button>
+              <button type="button">〉</button>
+            </div>
+          </section>
+          <div id="slide">
+            <section>
+              <img src="images/business01.jpg" alt="프로젝트 이미지3" />
+
+              <div>
+                <img src="images/business_logo01.svg" alt="비즈니스 로고" />
+                <h4>자갠이 더서에</h4>
+                <h3>
+                  그자웃 이다 려댠서님이 시태에<br />인소로 인우인소로 인누
+                </h3>
+                <p>
+                  게랄은 흔앙해롭다 기아블도 욱좽넌산다갬 아재르호가 나것아설면
+                  자워란이지
+                </p>
+                <div>
+                  <span>#초등학교</span><span>#국제학교</span
+                  ><span>#중학교</span> <span>#초등학교</span
+                  ><span>#국제학교</span><span>#중학교</span>
+                </div>
+              </div>
+            </section>
+            <section class="active">
+              <div class="pt-imgBox">안녕하세요</div>
+              <div>
+                <img src="images/business_logo01.svg" alt="비즈니스 로고" />
+                <h4>SOOP</h4>
+                <h3>내용입력</h3>
+                <p>내용입력</p>
+                <div>
+                  <span class="github-ic"></span>
+                  <span class="new-ic"> </span>
+                </div>
+              </div>
+            </section>
+            <section>
+              <img src="images/business01.jpg" alt="프로젝트이미지2" />
+              <div>
+                <img src="images/business_logo01.svg" alt="비즈니스 로고" />
+                <h4>자갠이 더서에</h4>
+                <h3>
+                  그자웃 이다 려댠서님이 시태에<br />인소로 인우인소로 인누
+                </h3>
+                <p>
+                  게랄은 흔앙해롭다 기아블도 욱좽넌산다갬 아재르호가 나것아설면
+                  자워란이지
+                </p>
+                <div>
+                  <span>#초등학교</span><span>#국제학교</span
+                  ><span>#중학교</span> <span>#초등학교</span
+                  ><span>#국제학교</span><span>#중학교</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 스크롤 이미지 -->
     <div class="scroll-icon"></div>
+    <div class="hr-modal">
+      <div class="card-container">
+        <!-- flipCard 지우기 -->
+        <div class="card" id="flipCard">
+          <div class="card-face front">
+            <div class="card-fc-st1">
+              <div class="card-fc-txt">1</div>
+              <div class="card-fc-txt">9</div>
+              <div class="card-fc-img"></div>
+              <div class="card-fc-txt">9</div>
+              <div class="card-fc-txt">6</div>
+            </div>
+            <div class="card-fc-st2">FRONTEND DEVELOPER</div>
+          </div>
+          <div class="card-face back">
+            <div class="card-bc-st1">
+              <div class="card-bc-txt bc-pd">SON JONG MIN</div>
+              <div class="card-bc-txt bc-pd">Frontend Developer</div>
+              <div class="card-bc-txt bc-pd">Email</div>
+              <div class="card-bc-txt-sm bc-pd">whdals0525@gmail.com</div>
+              <div class="bc-ic">
+                <div class="github-ic"></div>
+              </div>
+            </div>
+            <div class="card-bc-st2">
+              <div class="card-bc-img-box">
+                <div class="card-bc-img"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="jquery/fullpage.js"></script>
+    <script src="jquery/slide.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
+    <!-- test -->
+    <script>
+      const card = document.getElementById("flipCard");
+
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+    </script>
   </body>
 </html>

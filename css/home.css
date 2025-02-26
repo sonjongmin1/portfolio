@@ -34,7 +34,7 @@
   width: 320px;
   height: 320px;
   border-radius: 100%;
-  background-image: url("../img/profile/porfile.jpg");
+  /* background-image: url("../img/profile/porfile.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,3 +1,134 @@
 #pt {
   background-color: rgb(88, 89, 76);
 }
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* our business */
+#our_business {
+  width: 1300px;
+  height: 100vh;
+  padding-top: 100px;
+  margin: auto;
+}
+#our_business h2 {
+  font: 600 3.8rem "Poppins", serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#our_business h2 + p {
+  font-weight: bold;
+}
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 70px;
+  border: 4px solid #fff;
+}
+#btn button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 3px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bolder;
+}
+#btn button:hover {
+  background-color: rgb(89, 108, 101);
+  color: white;
+}
+/* 슬라이드 */
+#slide {
+  width: 3900px;
+  display: flex;
+  position: relative;
+  margin: auto;
+  left: -1300px;
+}
+#slide section {
+  width: 1300px;
+  display: flex;
+  border: 3px solid #fff;
+  opacity: 0.3;
+  transform: scale(0.6);
+  transition: all 1s;
+}
+#slide section.active {
+  opacity: 1;
+  transform: scale(1);
+}
+#slide section > img {
+  width: 450px;
+}
+
+.pt-imgBox {
+  border: 1px solid black;
+  background-color: #d9d9d9;
+}
+
+#slide section > div {
+  flex: 1;
+  padding: 30px;
+}
+#slide section > div img {
+  width: 150px;
+  margin-bottom: 25px;
+}
+#slide section h4 {
+  margin-bottom: 15px;
+}
+#slide section h3 {
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+}
+#slide section h3 + p {
+  width: 300px;
+  font-size: 0.9rem;
+  margin-bottom: 60px;
+}
+#slide section p + div {
+  width: 300px;
+  border: 1px solid #fff;
+}
+#slide section span {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 50px;
+  margin: 10px 3px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.new-ic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/open_in_new_white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.github-ic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/github-ic-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+.test {
+  background-color: black;
+}
