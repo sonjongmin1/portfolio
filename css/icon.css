@@ -1,0 +1,38 @@
+.new-ic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/open_in_new_white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.github-ic-white {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/github-ic-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+.github-ic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/github-ic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+.kakao-ic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon/kakaoIc.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}

@@ -3,6 +3,7 @@ const menuItems = document.querySelectorAll(".menu > li");
 const totalItems = menuItems.length;
 const hireBtn = document.querySelector("#hire-btn");
 const hrModal = document.querySelector(".hr-modal");
+const cardClBtn = document.querySelectorAll(".card-cl-btn");
 
 const intervalId = setInterval(function () {
   if (index < totalItems) {
@@ -15,4 +16,10 @@ const intervalId = setInterval(function () {
 
 hireBtn.addEventListener("click", function () {
   hrModal.classList.toggle("on");
+});
+
+cardClBtn.forEach((item) => {
+  item.addEventListener("click", function () {
+    hrModal.classList.remove("on");
+  });
 });

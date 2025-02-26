@@ -8,6 +8,7 @@
     />
     <title>portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icon.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/who.css" />
     <link rel="stylesheet" href="css/what.css" />
@@ -114,15 +115,30 @@
               </div>
             </section>
             <section class="active">
-              <div class="pt-imgBox">안녕하세요</div>
-              <div>
-                <img src="images/business_logo01.svg" alt="비즈니스 로고" />
-                <h4>SOOP</h4>
-                <h3>내용입력</h3>
-                <p>내용입력</p>
-                <div>
-                  <span class="github-ic"></span>
+              <div class="pt-st-1">
+                <h4>
+                  <span class="h4-txt">01. Main Project</span
+                  ><span class="h4-ln"></span>
+                </h4>
+                <h3>Soop</h3>
+                <p>2024.10 ~ 2024.11</p>
+                <div class="pt-st-txt-box">내용을 입력하세요.</div>
+                <div class="ts">
+                  <span>Html5</span>
+                  <span>Css</span>
+                  <span>Javascript</span>
+                </div>
+                <div class="ic-box">
+                  <span class="github-ic-white"></span>
                   <span class="new-ic"> </span>
+                </div>
+              </div>
+              <div class="pt-imgBox">
+                <div class="pt-imgBox-sd"></div>
+                <div class="mockup">
+                  <div class="scroll-container">
+                    <img src="./img/full-screen/soop.png" alt="작업물 1" />
+                  </div>
                 </div>
               </div>
             </section>
@@ -153,9 +169,9 @@
     <div class="scroll-icon"></div>
     <div class="hr-modal">
       <div class="card-container">
-        <!-- flipCard 지우기 -->
-        <div class="card" id="flipCard">
+        <div class="card">
           <div class="card-face front">
+            <div class="card-cl-btn ft"></div>
             <div class="card-fc-st1">
               <div class="card-fc-txt">1</div>
               <div class="card-fc-txt">9</div>
@@ -166,18 +182,32 @@
             <div class="card-fc-st2">FRONTEND DEVELOPER</div>
           </div>
           <div class="card-face back">
+            <div class="card-cl-btn bc"></div>
+            <div class="tack" data-fixed="false"></div>
             <div class="card-bc-st1">
               <div class="card-bc-txt bc-pd">SON JONG MIN</div>
               <div class="card-bc-txt bc-pd">Frontend Developer</div>
-              <div class="card-bc-txt bc-pd">Email</div>
-              <div class="card-bc-txt-sm bc-pd">whdals0525@gmail.com</div>
-              <div class="bc-ic">
-                <div class="github-ic"></div>
+              <div class="card-bc-txt bc-pd ab-txt1">
+                <span class="card-bc-txt-sm">E : </span
+                ><span class="card-bc-txt-sm"> whdals0525@gmail.com </span>
+              </div>
+              <div class="card-bc-txt bc-pd ab-txt2">
+                <span class="card-bc-txt-sm">M : </span
+                ><span class="card-bc-txt-sm">010-3122-8127</span>
               </div>
             </div>
             <div class="card-bc-st2">
               <div class="card-bc-img-box">
                 <div class="card-bc-img"></div>
+              </div>
+              <div class="bc-ic">
+                <div class="new-ic"><a href="#"></a></div>
+                <div class="github-ic">
+                  <a href="https://github.com/sonjongmin1" target="_blank"></a>
+                </div>
+                <div class="kakao-ic">
+                  <a href="https://open.kakao.com/o/samtVjih"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -188,13 +218,7 @@
     <script src="jquery/slide.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/main.js"></script>
-    <!-- test -->
-    <script>
-      const card = document.getElementById("flipCard");
-
-      card.addEventListener("click", () => {
-        card.classList.toggle("flipped");
-      });
-    </script>
+    <script src="js/card.js"></script>
+    <script src="js/scroll-auto.js"></script>
   </body>
 </html>
