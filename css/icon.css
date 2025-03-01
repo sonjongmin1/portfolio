@@ -1,4 +1,5 @@
 .new-ic {
+  position: relative;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon/open_in_new_white.svg");
@@ -7,7 +8,16 @@
   background-size: cover;
 }
 
+.new-ic > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .github-ic-white {
+  position: relative;
   width: 30px;
   height: 30px;
   background-image: url("../img/icon/github-ic-white.png");
@@ -15,6 +25,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: bolder;
+}
+
+.github-ic-white > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .github-ic {

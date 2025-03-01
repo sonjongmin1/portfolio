@@ -33,7 +33,6 @@ a {
   align-items: center;
   margin: auto;
   margin-bottom: 70px;
-  border: 4px solid #fff;
 }
 #btn button {
   width: 50px;
@@ -61,13 +60,13 @@ a {
   width: 1300px;
   height: 60vh;
   display: flex;
-  border: 3px solid #fff;
   opacity: 0.3;
   transform: scale(0.6);
   transition: all 1s;
 }
 
 #slide section .pt-st-1 {
+  position: relative;
   width: 100%;
   padding: 20px 10px 20px 10px;
 }
@@ -75,7 +74,6 @@ a {
 #slide section .pt-st-1 h4 {
   display: flex;
   align-items: center;
-  border: 1px solid blue;
   margin-bottom: 20px;
 }
 
@@ -97,7 +95,6 @@ a {
   padding-left: 10px;
   font-size: 30px;
   font-weight: 400;
-  border: 1px solid black;
   margin-bottom: 10px;
 }
 
@@ -108,31 +105,39 @@ a {
 }
 
 #slide section .pt-st-1 > .ts {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-#slide section .pt-st-1 > .ts > span {
+#slide section .pt-st-1 > .ts > div > span {
   font-size: 20px;
   padding: 0 5px 0 5px;
   color: #fff;
 }
 
-#slide section .pt-st-1 > .ic-box {
-  position: absolute;
-  bottom: 10px;
-  border: 1px solid black;
+.ic-box {
+  padding-right: 10px;
 }
 
 .pt-st-txt-box {
+  display: flex;
+  align-items: center;
   top: 50%;
   border-radius: 10px;
   width: 100%;
   height: 280px;
   background-color: #d9d9d9;
-  color: #58594c;
   margin-bottom: 20px;
   padding: 20px;
+  overflow: auto;
+}
+
+.pt-st-txt-box > span {
+  font-size: 20px;
+  color: #58594c;
+  line-height: 30px;
 }
 
 #slide section.active {
@@ -145,16 +150,17 @@ a {
 
 .pt-imgBox {
   position: relative;
-  border: 1px solid black;
   padding: 0 10px 0 10px;
 }
 
 .pt-imgBox-sd {
   position: absolute;
-  width: 100%;
+  width: 97%;
   height: 100%;
+  left: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  border-radius: 10px;
 }
 
 .pt-imgBox:hover > .pt-imgBox-sd {
@@ -165,19 +171,11 @@ a {
   flex: 1;
 }
 
-#slide section p + div {
-  border: 1px solid #fff;
-}
 #slide section span {
   display: inline-block;
   border-radius: 50px;
   font-weight: bold;
-  font-size: 0.8rem;
   color: #333;
-}
-
-.test {
-  background-color: black;
 }
 
 /* auto scroll */
@@ -196,7 +194,14 @@ a {
   flex-direction: column;
   position: absolute;
   top: 0;
+}
+
+.scroll-container.soop {
   transition: transform 1s linear;
+}
+
+.scroll-container.hygi {
+  transition: transform 4s linear;
 }
 
 .scroll-container img {

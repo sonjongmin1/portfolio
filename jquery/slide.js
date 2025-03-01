@@ -1,6 +1,8 @@
 $(document).ready(() => {
   //왼쪽방향 화살표 클릭
   const no = $("#slide").find(".active").index();
+  // const activeWidth = $(".active").innerWidth();
+  // console.log(activeWidth);
   let active = true;
   $("#btn button")
     .eq(0)
