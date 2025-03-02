@@ -60,6 +60,7 @@ a {
 }
 
 /* 스크롤 */
+
 .scroll-icon {
   position: fixed;
   left: 50%;
@@ -72,6 +73,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   animation: dy-Img 1.5s infinite ease-in-out;
+}
+/* 스크롤 숨기기 */
+.fp-viewing-btn-4 .scroll-icon {
+  display: none;
 }
 
 .menu {

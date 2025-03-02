@@ -12,6 +12,7 @@
 .who-st1 {
   width: 35%;
   height: 100%;
+  padding: 20px;
 }
 
 .who-st2 {
@@ -20,28 +21,51 @@
   height: 100%;
 }
 
+.intro {
+  width: 75%;
+  top: 100px;
+  right: 100px;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.intro-con > span {
+  display: block;
+}
+
+.intro-txt-emp {
+  color: rgb(75, 58, 36);
+  font-size: 35px;
+  font-weight: bolder;
+}
+
 .who-bt {
   position: absolute;
   width: 100%;
-  height: 270px;
+  height: 230px;
   bottom: 0;
   background-color: rgb(89, 108, 101);
 }
 
 .who-pf {
   position: absolute;
+  overflow: hidden;
   left: 214px;
-  bottom: 170px;
+  bottom: 130px;
   width: 300px;
   height: 450px;
   background-color: #d9d9d9;
   border-radius: 20px;
   z-index: 1000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .pf-auto {
   position: absolute;
-  top: 50%;
+  top: 56%;
   width: 100%;
   height: 150px;
   z-index: 1000;
@@ -168,3 +192,16 @@
     bottom: 0px; /* 올라가는 위치 */
   }
 }
+
+/* 
+참고 pt
+메인 rgb 248 93 62
+강조 텍스트 rgb 235 62 22 // 메인대비 gap 13 31 40 
+서브 rgb 249 112 87
+
+my pt
+background-color: rgb(88, 89, 76);
+background-color: rgb(75, 58, 36);
+color: rgb(89, 108, 101);
+75, 58, 36
+*/

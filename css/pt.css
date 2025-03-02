@@ -50,7 +50,7 @@ a {
 }
 /* 슬라이드 */
 #slide {
-  width: 3900px;
+  width: 6500px;
   display: flex;
   position: relative;
   margin: auto;
@@ -123,7 +123,6 @@ a {
 
 .pt-st-txt-box {
   display: flex;
-  align-items: center;
   top: 50%;
   border-radius: 10px;
   width: 100%;
@@ -135,7 +134,6 @@ a {
 }
 
 .pt-st-txt-box > span {
-  font-size: 20px;
   color: #58594c;
   line-height: 30px;
 }
@@ -202,6 +200,14 @@ a {
 
 .scroll-container.hygi {
   transition: transform 4s linear;
+}
+
+.scroll-container.tour-web {
+  transition: transform 3s linear;
+}
+
+.scroll-container.nike {
+  transition: transform 5s linear;
 }
 
 .scroll-container img {
