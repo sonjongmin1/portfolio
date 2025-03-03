@@ -1,6 +1,7 @@
 $("#fullpage").fullpage({
   anchors: ["btn-1", "btn-2", "btn-3", "btn-4"],
   menu: "#menu-btn",
+  keyboardScrolling: false,
   onLeave: function (index, nextIndex, direction) {
     // 메뉴 항목에 'act' 클래스 추가/제거
     $("#menu-btn >li")
