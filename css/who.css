@@ -22,11 +22,10 @@
 }
 
 .intro {
-  width: 75%;
-  top: 100px;
-  right: 100px;
+  width: 82%;
+  top: 150px;
+  right: 15px;
   position: absolute;
-  border: 1px solid black;
 }
 
 .intro-con > span {
@@ -34,9 +33,37 @@
 }
 
 .intro-txt-emp {
+  position: relative;
   color: rgb(75, 58, 36);
   font-size: 35px;
   font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+/* 애니메이션 */
+div .section.fp-table.active .intro-txt-emp {
+  animation: txt-move 1.5s ease-in-out;
+}
+
+.txt-emp {
+  color: rgb(75, 58, 36);
+}
+
+.intro-txt-nom {
+  position: relative;
+  font-size: 25px;
+  color: rgb(89, 108, 101);
+  font-weight: bolder;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+div .section.fp-table.active #nom-1 {
+  animation: txt-move 1.5s ease-in-out;
+}
+
+div .section.fp-table.active #nom-2 {
+  animation: txt-move 1.5s ease-in-out;
 }
 
 .who-bt {
@@ -50,8 +77,8 @@
 .who-pf {
   position: absolute;
   overflow: hidden;
-  left: 214px;
-  bottom: 130px;
+  left: 220px;
+  bottom: 155px;
   width: 300px;
   height: 450px;
   background-color: #d9d9d9;
@@ -190,6 +217,18 @@
   }
   100% {
     bottom: 0px; /* 올라가는 위치 */
+  }
+}
+
+@keyframes txt-move {
+  0% {
+    bottom: -100px; /* 애니메이션 시작 위치 */
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0px; /* 올라가는 위치 */
+    opacity: 1;
   }
 }
 
