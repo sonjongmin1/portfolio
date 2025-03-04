@@ -1,5 +1,10 @@
 let whatMdClose = document.querySelector(".what-md-close");
 let whatModalBox = document.querySelector(".what-modal-box");
+let mainSkill = document.querySelector("#main-skill");
+
+mainSkill.addEventListener("click", function () {
+  whatModalBox.classList.add("on");
+});
 
 whatMdClose.addEventListener("click", function () {
   whatModalBox.classList.remove("on");

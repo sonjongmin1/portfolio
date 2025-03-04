@@ -4,6 +4,7 @@ let whatSt = document.querySelector(".what-st");
 
 // 캔버스 생성 및 추가
 canvas = document.createElement("canvas");
+divTag = document.createElement("div");
 ctx = canvas.getContext("2d");
 canvas.width = 1000;
 canvas.height = 550;
@@ -123,91 +124,62 @@ function createEnemy() {
   }, 1500);
 }
 
-// 카운트다운 관련 변수
-let countdown = 3;
-let countdownStarted = false;
-let countdownFinished = false;
-
-function startCountdown() {
-  countdownStarted = true;
-  const interval = setInterval(function () {
-    if (countdown > 0) {
-      countdown--;
-    } else {
-      clearInterval(interval);
-      countdownFinished = true;
-    }
-  }, 1000);
-}
-
 function update() {
-  if (countdownFinished) {
-    if ("ArrowRight" in keysDown) {
-      hamX += 8;
-    }
-    if ("ArrowLeft" in keysDown) {
-      hamX -= 8;
-    }
+  if ("ArrowRight" in keysDown) {
+    hamX += 8;
+  }
+  if ("ArrowLeft" in keysDown) {
+    hamX -= 8;
+  }
 
-    if (hamX <= 0) {
-      hamX = 0;
-    }
-    if (hamX >= canvas.width - 100) {
-      hamX = canvas.width - 100;
-    }
+  if (hamX <= 0) {
+    hamX = 0;
+  }
+  if (hamX >= canvas.width - 100) {
+    hamX = canvas.width - 100;
+  }
 
-    // 총알의 y좌표 업데이트 함수
-    for (let i = 0; i < bulletList.length; i++) {
-      if (bulletList[i].alive) {
-        bulletList[i].update();
-        bulletList[i].checkHit();
-      }
+  // 총알의 y좌표 업데이트 함수
+  for (let i = 0; i < bulletList.length; i++) {
+    if (bulletList[i].alive) {
+      bulletList[i].update();
+      bulletList[i].checkHit();
     }
+  }
 
-    for (let i = 0; i < enemyList.length; i++) {
-      enemyList[i].update();
-    }
+  for (let i = 0; i < enemyList.length; i++) {
+    enemyList[i].update();
   }
 }
 
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height); // 캔버스 초기화
 
-  if (!countdownFinished) {
-    ctx.font = "200px Arial";
-    ctx.fillStyle = "white";
-    ctx.fillText(countdown, canvas.width / 2 - 50, canvas.height / 2 + 55);
-  } else {
-    ctx.drawImage(hamsterImage, hamX, hamY, 100, 99);
-    ctx.fillText(`Score: ${score}`, canvas.width - 150, 50);
-    ctx.font = "30px Arial";
-    ctx.fillStyle = "white";
+  ctx.drawImage(hamsterImage, hamX, hamY, 100, 99);
+  ctx.fillText(`Score: ${score}`, canvas.width - 150, 50);
+  ctx.font = "30px Arial";
+  ctx.fillStyle = "white";
 
-    for (let i = 0; i < bulletList.length; i++) {
-      if (bulletList[i].alive) {
-        ctx.drawImage(tackImage, bulletList[i].x, bulletList[i].y, 100, 100);
-      }
+  for (let i = 0; i < bulletList.length; i++) {
+    if (bulletList[i].alive) {
+      ctx.drawImage(tackImage, bulletList[i].x, bulletList[i].y, 100, 100);
     }
+  }
 
-    for (let i = 0; i < enemyList.length; i++) {
-      const enemyWidth = 100;
-      const enemyHeight = 100;
-      ctx.drawImage(
-        enemyList[i].image, // 랜덤 이미지를 사용
-        enemyList[i].x,
-        enemyList[i].y,
-        enemyWidth,
-        enemyHeight
-      );
-    }
+  for (let i = 0; i < enemyList.length; i++) {
+    const enemyWidth = 100;
+    const enemyHeight = 100;
+    ctx.drawImage(
+      enemyList[i].image, // 랜덤 이미지를 사용
+      enemyList[i].x,
+      enemyList[i].y,
+      enemyWidth,
+      enemyHeight
+    );
   }
 }
 
 function main() {
-  if (!countdownStarted) {
-    startCountdown();
-  }
-
   update();
   render();
   requestAnimationFrame(main);

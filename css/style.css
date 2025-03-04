@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #fff;
+  background-color: rgb(88, 89, 76);
 }
 
 ul {
@@ -133,7 +134,7 @@ a {
     bottom: 20px; /* 애니메이션 시작 위치 */
   }
   50% {
-    bottom: 15px; /* 내려가는 끝 위치 */
+    bottom: 10px; /* 내려가는 끝 위치 */
   }
   100% {
     bottom: 20px; /* 올라가는 위치 */

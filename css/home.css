@@ -32,8 +32,8 @@
   width: 320px;
   height: 320px;
   border-radius: 100%;
-  background-image: url("../img/profile/profile.jpg");
-  background-position: center;
+  background-image: url("../img/profile/profile.jpeg");
+  background-position: 60%;
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

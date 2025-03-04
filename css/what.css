@@ -3,6 +3,35 @@
   background-color: rgb(89, 108, 101);
 }
 
+.what-st {
+  position: relative;
+}
+
+.what-skills {
+  position: absolute;
+  width: 1000px;
+  height: 550px;
+  margin-top: 40px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 35px;
+  color: rgb(88, 89, 76);
+}
+
+.what-skills .what-md-st1-txt {
+  position: relative;
+  animation: skills 1.5s infinite ease-in-out;
+}
+
+.what-skills .what-md-st1-txt:hover {
+  cursor: pointer;
+}
+
+.what-txt {
+  position: absolute;
+}
+
 div .section.fp-table.active .what-modal-box.on {
   display: flex;
   position: absolute;
@@ -11,7 +40,6 @@ div .section.fp-table.active .what-modal-box.on {
   height: 100%;
   top: 0;
   left: 0;
-
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -23,7 +51,6 @@ div .section.fp-table.active .what-modal {
   position: absolute;
   width: 1000px;
   height: 550px;
-
   border-radius: 20px;
   padding: 20px;
   font-size: 35px;
@@ -365,5 +392,17 @@ div
   100% {
     right: 50%; /* 올라가는 위치 */
     transform: translateX(50%);
+  }
+}
+
+@keyframes skills {
+  0% {
+    bottom: 0px; /* 애니메이션 시작 위치 */
+  }
+  50% {
+    bottom: 5px; /* 내려가는 끝 위치 */
+  }
+  100% {
+    bottom: 0px; /* 올라가는 위치 */
   }
 }
