@@ -1,10 +1,10 @@
 const images = [
-  "../img/who/who-img1.jpeg",
-  "../img/who/who-img2.jpg",
-  "../img/who/who-img3.jpeg",
-  "../img/who/who-img4.jpeg",
-  "../img/who/who-img5.jpeg",
-  "../img/who/who-img6.jpeg",
+  "/img/who/who-img1.jpeg",
+  "/img/who/who-img2.jpg",
+  "/img/who/who-img3.jpeg",
+  "/img/who/who-img4.jpeg",
+  "/img/who/who-img5.jpeg",
+  "/img/who/who-img6.jpeg",
 ];
 
 const pfElement = document.querySelector(".who-pf");
