@@ -72,16 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let enemyList = [];
   let enemyImages = [
-    "../img/lang-ic/html.png",
-    "../img/lang-ic/css.png",
-    "../img/lang-ic/js.png",
-    "../img/lang-ic/jquery.png",
-    "../img/lang-ic/react.png",
-    "../img/lang-ic/mysql.png",
-    "../img/lang-ic/github.png",
-    "../img/lang-ic/word.png",
-    "../img/lang-ic/power.png",
-    "../img/lang-ic/excel.svg",
+    "./img/lang-ic/html.png",
+    "./img/lang-ic/css.png",
+    "./img/lang-ic/js.png",
+    "./img/lang-ic/jquery.png",
+    "./img/lang-ic/react.png",
+    "./img/lang-ic/mysql.png",
+    "./img/lang-ic/github.png",
+    "./img/lang-ic/word.png",
+    "./img/lang-ic/power.png",
+    "./img/lang-ic/excel.svg",
   ];
 
   function Enemy() {
@@ -110,10 +110,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loadImage() {
     hamsterImage = new Image();
-    hamsterImage.src = "../img/card/hamster.png";
+    hamsterImage.src = "./img/card/hamster.png";
 
     tackImage = new Image();
-    tackImage.src = "../img/icon/rotated-tack.png";
+    tackImage.src = "./img/icon/rotated-tack.png";
   }
 
   let keysDown = {};
