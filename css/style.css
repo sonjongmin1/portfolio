@@ -139,3 +139,20 @@ a {
     bottom: 20px; /* 올라가는 위치 */
   }
 }
+
+/* 오류 처리 */
+.what-md-st1-txt {
+  display: none;
+}
+
+.what-md-ub {
+  dominant-baseline: none;
+}
+
+.what-md-st2 {
+  display: none;
+}
+
+.what-md-st3 {
+  display: none;
+}

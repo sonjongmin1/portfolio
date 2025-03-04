@@ -3,7 +3,7 @@
   background-color: rgb(89, 108, 101);
 }
 
-div .section.fp-table.active .what-modal-box {
+div .section.fp-table.active .what-modal-box.on {
   display: flex;
   position: absolute;
   align-items: center;
@@ -11,26 +11,355 @@ div .section.fp-table.active .what-modal-box {
   height: 100%;
   top: 0;
   left: 0;
-  border: 1px solid black;
+
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 div .section.fp-table.active .what-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 40px;
   position: absolute;
   width: 1000px;
   height: 550px;
-  border: 1px solid black;
+
   border-radius: 20px;
   padding: 20px;
   font-size: 35px;
-  background-color: blue;
+  background-color: #d9d9d9;
   animation: what-md 1.5s ease-in-out forwards;
+}
+div .section.fp-table.active .what-md-st1 {
+  display: flex;
+  align-items: center;
+}
+
+div .section.fp-table.active .what-md-close {
+  position: relative;
+  left: 350px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon/ft-close-btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div .section.fp-table.active .what-md-close:hover {
+  cursor: pointer;
+}
+
+div .section.fp-table.active .what-md-st1-txt {
+  display: block;
+  color: rgb(88, 89, 76);
+  font-weight: bolder;
+}
+
+div .section.fp-table.active .what-md-ub {
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  background-color: rgba(88, 89, 76, 0.5);
+  margin-left: 10px;
+}
+
+div .section.fp-table.active .what-md-st2 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* lang 시작 */
+
+div .section.fp-table.active .what-md-st2 > .st > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > div:first-child {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* div
+  .section.fp-table.active
+  .what-md-st2
+  > .md-st2-lang
+  > div
+  > div:nth-child(2) {
+  position: absolute;
+  top: -20px;
+  left: 80px;
+  font-size: 32px;
+} */
+
+div .section.fp-table.active .what-md-st2 > .st > div > :last-child {
+  font-size: 24px;
+  color: rgb(88, 89, 76);
+  font-weight: 400;
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > .md-st2-html {
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/lang-ic/html.png");
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > .md-st2-css {
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/lang-ic/css.png");
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > .md-st2-js {
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/lang-ic/js.png");
+  margin-left: 5px;
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > .md-st2-react {
+  width: 92px;
+  height: 82px;
+  background-image: url("../img/lang-ic/react.png");
+  margin-left: 5px;
+}
+
+div .section.fp-table.active .what-md-st2 > .st > div > .md-st2-scss {
+  width: 92px;
+  height: 68px;
+  background-image: url("../img/lang-ic/scss.png");
+  margin-left: 5px;
+}
+
+/* lang 끝 */
+
+/* ft 시작 */
+
+div .section.fp-table.active .what-md-st2 > .md-st2-ft > div {
+  padding: 30px 0 30px 0;
+}
+
+/* ft 끝 */
+
+/* Database 시작 */
+
+div .section.fp-table.active .what-md-st3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+div .section.fp-table.active .what-md-st3 > ul {
+  display: flex;
+}
+
+div .section.fp-table.active .what-md-st3 > ul > li {
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(88, 89, 76);
+  padding: 10px 20px 10px 20px;
+}
+
+div .section.fp-table.active .what-md-st3 > ul > li:hover {
+  cursor: pointer;
+}
+
+div .section.fp-table.active .what-md-st3 > ul > li:not(:last-child) {
+  margin-right: 20px;
+}
+
+div .section.fp-table.active .md-st2-db {
+  width: 100%;
+}
+
+div .section.fp-table.active .md-st2-db > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+
+div .section.fp-table.active .md-st2-db > div > div:first-child {
+  width: 60%;
+  padding: 20px;
+}
+
+div .section.fp-table.active .md-st2-db > div > div:last-child {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+div .section.fp-table.active .md-st2-db > div > div > .sql-ic {
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/lang-ic/mysql.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+div .section.fp-table.active .md-st2-db > div > div > .what-md-st2-txt > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+div .section.fp-table.active .md-st2-db > div > div > .what-md-st2-txt {
+  font-size: 24px;
+  color: rgb(88, 89, 76);
+}
+
+div .section.fp-table.active .md-st2-db > div > div > .sql-certifi {
+  width: 240px;
+  height: 350px;
+  background-image: url("../img/certifi/sql.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div .section.fp-table.active .md-st2-db > div > div > .sql-certifi:hover {
+  cursor: pointer;
+}
+
+/* db 끝 */
+
+/* etc 시작 */
+div .section.fp-table.active .md-st2-etc {
+  width: 100%;
+}
+div .section.fp-table.active .md-st2-etc > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div {
+  width: 30%;
+  height: 100%;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-github {
+  position: relative;
+  height: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 103.5px;
+  background-image: url("../img/icon/github-ic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-word {
+  position: relative;
+  height: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 73.5px;
+  background-image: url("../img/certifi/word-processor.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-word:hover {
+  cursor: pointer;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-mos {
+  position: relative;
+  width: 150px;
+  height: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/certifi/mos-master.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-mos:hover {
+  cursor: pointer;
+}
+
+div .section.fp-table.active .md-st2-etc > div > div > .etc-con {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  font-size: 18px;
+  color: rgb(88, 89, 76);
+}
+
+div
+  .section.fp-table.active
+  .md-st2-etc
+  > div
+  > div
+  > .etc-con
+  > p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* etc 끝 */
+
+/* what 이미지 모달 */
+.sql-modal,
+.word-modal,
+.mos-modal {
+  display: none;
+}
+
+#word.on {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 650px;
+}
+
+#sql.on {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 650px;
+}
+
+#mos.on {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 615px;
 }
 
 @keyframes what-md {
   0% {
-    right: 0%;
+    right: -100%;
   }
 
   100% {

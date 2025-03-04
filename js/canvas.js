@@ -179,7 +179,7 @@ function render() {
     ctx.fillText(countdown, canvas.width / 2 - 50, canvas.height / 2 + 55);
   } else {
     ctx.drawImage(hamsterImage, hamX, hamY, 100, 99);
-    ctx.fillText(`Score: ${score}`, 30, 50);
+    ctx.fillText(`Score: ${score}`, canvas.width - 150, 50);
     ctx.font = "30px Arial";
     ctx.fillStyle = "white";
 
