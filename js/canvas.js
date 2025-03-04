@@ -36,8 +36,8 @@ function Bullet() {
     for (let i = 0; i < enemyList.length; i++) {
       if (
         this.y <= enemyList[i].y &&
-        this.x >= enemyList[i].x &&
-        this.x <= enemyList[i].x + 100
+        this.x >= enemyList[i].x - 30 &&
+        this.x <= enemyList[i].x + 130
       ) {
         score++;
         this.alive = false;
@@ -53,12 +53,32 @@ function generateRandomValue(min, max) {
 }
 
 let enemyList = [];
+let enemyImages = [
+  "../img/lang-ic/html.png",
+  "../img/lang-ic/css.png",
+  "../img/lang-ic/js.png",
+  "../img/lang-ic/jquery.png",
+  "../img/lang-ic/react.png",
+  "../img/lang-ic/mysql.png",
+  "../img/lang-ic/github.png",
+  "../img/lang-ic/word.png",
+  "../img/lang-ic/power.png",
+  "../img/lang-ic/excel.svg",
+];
+
 function Enemy() {
   this.x = 0;
   this.y = 0;
+  this.image = null; // 랜덤 이미지를 저장할 변수
   this.init = function () {
     this.y = 0;
-    this.x = generateRandomValue(0, canvas.width - 50);
+    this.x = generateRandomValue(100, canvas.width - 150);
+
+    // 이미지 리스트에서 랜덤으로 하나를 선택
+    this.image = new Image();
+    let randomIndex = generateRandomValue(0, enemyImages.length - 1);
+    this.image.src = enemyImages[randomIndex];
+
     enemyList.push(this);
   };
   this.update = function () {
@@ -76,20 +96,15 @@ function loadImage() {
 
   tackImage = new Image();
   tackImage.src = "../img/icon/rotated-tack.png";
-
-  enemyImage = new Image();
-  enemyImage.src = "../img/lang-ic/html.png";
 }
 
 let keysDown = {};
 function setupKeyboardListener() {
   document.addEventListener("keydown", function (event) {
-    console.log("키", event.key);
     keysDown[event.key] = true;
   });
   document.addEventListener("keyup", function (event) {
     delete keysDown[event.key];
-    console.log("버튼 클릭후", keysDown);
     if (event.key === " ") {
       createBullet();
     }
@@ -97,7 +112,6 @@ function setupKeyboardListener() {
 }
 
 function createBullet() {
-  console.log("총알 생성!");
   let b = new Bullet();
   b.init();
 }
@@ -106,69 +120,97 @@ function createEnemy() {
   const interval = setInterval(function () {
     let e = new Enemy();
     e.init();
+  }, 1500);
+}
+
+// 카운트다운 관련 변수
+let countdown = 3;
+let countdownStarted = false;
+let countdownFinished = false;
+
+function startCountdown() {
+  countdownStarted = true;
+  const interval = setInterval(function () {
+    if (countdown > 0) {
+      countdown--;
+    } else {
+      clearInterval(interval);
+      countdownFinished = true;
+    }
   }, 1000);
 }
 
 function update() {
-  if ("ArrowRight" in keysDown) {
-    hamX += 8;
-  }
-  if ("ArrowLeft" in keysDown) {
-    hamX -= 8;
-  }
-
-  if (hamX <= 0) {
-    hamX = 0;
-  }
-  if (hamX >= canvas.width - 100) {
-    hamX = canvas.width - 100;
-  }
-
-  // 총알의 y좌표 업데이트 함수
-  for (let i = 0; i < bulletList.length; i++) {
-    if (bulletList[i].alive) {
-      bulletList[i].update();
-      bulletList[i].checkHit();
+  if (countdownFinished) {
+    if ("ArrowRight" in keysDown) {
+      hamX += 8;
     }
-  }
+    if ("ArrowLeft" in keysDown) {
+      hamX -= 8;
+    }
 
-  for (let i = 0; i < enemyList.length; i++) {
-    enemyList[i].update();
+    if (hamX <= 0) {
+      hamX = 0;
+    }
+    if (hamX >= canvas.width - 100) {
+      hamX = canvas.width - 100;
+    }
+
+    // 총알의 y좌표 업데이트 함수
+    for (let i = 0; i < bulletList.length; i++) {
+      if (bulletList[i].alive) {
+        bulletList[i].update();
+        bulletList[i].checkHit();
+      }
+    }
+
+    for (let i = 0; i < enemyList.length; i++) {
+      enemyList[i].update();
+    }
   }
 }
 
 function render() {
   ctx.clearRect(0, 0, canvas.width, canvas.height); // 캔버스 초기화
-  ctx.drawImage(hamsterImage, hamX, hamY, 100, 99);
-  ctx.fillText(`Score: ${score}`, 30, 50);
-  ctx.font = "30px Arial";
-  ctx.fillStyle = "white";
 
-  for (let i = 0; i < bulletList.length; i++) {
-    if (bulletList[i].alive) {
-      ctx.drawImage(tackImage, bulletList[i].x, bulletList[i].y, 100, 100);
+  if (!countdownFinished) {
+    ctx.font = "200px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText(countdown, canvas.width / 2 - 50, canvas.height / 2 + 55);
+  } else {
+    ctx.drawImage(hamsterImage, hamX, hamY, 100, 99);
+    ctx.fillText(`Score: ${score}`, 30, 50);
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "white";
+
+    for (let i = 0; i < bulletList.length; i++) {
+      if (bulletList[i].alive) {
+        ctx.drawImage(tackImage, bulletList[i].x, bulletList[i].y, 100, 100);
+      }
     }
-  }
 
-  for (let i = 0; i < enemyList.length; i++) {
-    const enemyWidth = 100;
-    const enemyHeight = 100;
-    ctx.drawImage(
-      enemyImage,
-      enemyList[i].x,
-      enemyList[i].y,
-      enemyWidth,
-      enemyHeight
-    );
+    for (let i = 0; i < enemyList.length; i++) {
+      const enemyWidth = 100;
+      const enemyHeight = 100;
+      ctx.drawImage(
+        enemyList[i].image, // 랜덤 이미지를 사용
+        enemyList[i].x,
+        enemyList[i].y,
+        enemyWidth,
+        enemyHeight
+      );
+    }
   }
 }
 
 function main() {
-  if (!gameOver) {
-    update();
-    render();
-    requestAnimationFrame(main);
+  if (!countdownStarted) {
+    startCountdown();
   }
+
+  update();
+  render();
+  requestAnimationFrame(main);
 }
 
 loadImage();
