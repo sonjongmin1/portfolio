@@ -93,7 +93,7 @@ function Enemy() {
 
 function loadImage() {
   hamsterImage = new Image();
-  hamsterImage.src = "./img/card/hamster.png";
+  hamsterImage.src = "./img/card/Hamster.png";
 
   tackImage = new Image();
   tackImage.src = "./img/icon/rotated-tack.png";
