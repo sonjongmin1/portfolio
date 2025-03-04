@@ -192,7 +192,7 @@
 }
 
 .card.flipped .tack {
-  background-image: url("/img/icon/press-tack.png");
+  background-image: url("../img/icon/press-tack.png");
   top: 5px;
 }
 /* 카드 닫기 버튼 */
@@ -213,7 +213,7 @@
 } */
 
 .bc {
-  background-image: url("/img/icon/bc-close-btn.svg");
+  background-image: url("../img/icon/bc-close-btn.svg");
 }
 
 .bc:hover {
