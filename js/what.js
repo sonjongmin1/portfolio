@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 커서 업데이트 함수
   function updateCursor(element) {
     if (element.classList.contains("on")) {
-      element.style.cursor = "url('../img/icon/ft-close-btn.svg'), auto";
+      element.style.cursor = "url('./img/icon/ft-close-btn.svg'), auto";
     } else {
       element.style.cursor = "pointer";
     }
