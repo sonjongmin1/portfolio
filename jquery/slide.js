@@ -1,4 +1,11 @@
 $(document).ready(() => {
+  const totalSlides = 7; // 슬라이드의 총 개수
+  let currentSlide = 1; // 현재 슬라이드 번호
+
+  const updateCount = () => {
+    $("#pt-count").text(`${currentSlide}/${totalSlides}`);
+  };
+
   //왼쪽방향 화살표 클릭
   const no = $("#slide").find(".active").index();
   // const activeWidth = $(".active").innerWidth();
@@ -16,6 +23,10 @@ $(document).ready(() => {
           .addClass("active")
           .siblings()
           .removeClass("active");
+
+        currentSlide = currentSlide === 1 ? totalSlides : currentSlide - 1; // 페이지 번호 갱신
+        updateCount();
+
         setTimeout(callback_1, 1000);
       }
     });
@@ -39,6 +50,10 @@ $(document).ready(() => {
           .addClass("active")
           .siblings()
           .removeClass("active");
+
+        currentSlide = currentSlide === totalSlides ? 1 : currentSlide + 1; // 페이지 번호 갱신
+        updateCount();
+
         setTimeout(callback_2, 1000);
       }
     });
@@ -48,4 +63,7 @@ $(document).ready(() => {
     $("#slide").append($("#slide").children().first());
     active = true;
   };
+  updateCount();
 }); //............js end
+
+// 페이지카운트
