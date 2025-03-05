@@ -232,15 +232,6 @@ div .section.fp-table.active #nom-2 {
   }
 }
 
-/* 
-참고 pt
-메인 rgb 248 93 62
-강조 텍스트 rgb 235 62 22 // 메인대비 gap 13 31 40 
-서브 rgb 249 112 87
-
-my pt
-background-color: rgb(88, 89, 76);
-background-color: rgb(75, 58, 36);
-color: rgb(89, 108, 101);
-75, 58, 36
-*/
+/* 모바일 */
+@media (max-width: 768px) {
+}

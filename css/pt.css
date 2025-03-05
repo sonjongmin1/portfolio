@@ -294,3 +294,7 @@ a {
   width: 100%;
   display: block;
 }
+
+/* 모바일 */
+@media (max-width: 768px) {
+}

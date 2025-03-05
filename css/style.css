@@ -157,3 +157,7 @@ a {
 .what-md-st3 {
   display: none;
 }
+
+/* 모바일 */
+@media (max-width: 768px) {
+}

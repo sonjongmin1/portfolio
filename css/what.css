@@ -479,3 +479,7 @@ div
     bottom: -75px; /* 올라가는 위치 */
   }
 }
+
+/* 모바일 */
+@media (max-width: 768px) {
+}

@@ -85,7 +85,11 @@
   }
   100% {
     opacity: 1;
-    left: 0px;
+    left: 0;
     bottom: 0;
   }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
 }
