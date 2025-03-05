@@ -12,7 +12,8 @@
   width: 1000px;
   height: 550px;
   margin-top: 40px;
-  background-color: transparent;
+  /* 테스트 주석 */
+  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 20px;
   border-radius: 20px;
   font-size: 35px;
@@ -25,6 +26,35 @@
 }
 
 .what-skills .what-md-st1-txt:hover {
+  cursor: pointer;
+}
+
+.what-skills .what-md-st1-txt > .click-ic-cl {
+  position: absolute;
+  bottom: -10px;
+  left: -15px;
+  transform: rotate(20deg);
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/icon/click-ic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.what-game-btn {
+  position: relative;
+  font-size: 60px;
+  bottom: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+}
+
+.what-game-btn:hover {
   cursor: pointer;
 }
 
@@ -63,6 +93,7 @@ div .section.fp-table.active .what-md-st1 {
 }
 
 div .section.fp-table.active .what-md-close {
+  display: block;
   position: relative;
   left: 350px;
   width: 35px;
@@ -71,6 +102,24 @@ div .section.fp-table.active .what-md-close {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+div
+  .section.fp-table.active
+  .what-modal-box.on
+  .what-md-close
+  > .what-md-close-click-ic {
+  position: absolute;
+  bottom: -75px;
+  left: -15px;
+  transform: rotate(30deg);
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/icon/click-ic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: click-ic 1.5s infinite ease-in-out;
 }
 
 div .section.fp-table.active .what-md-close:hover {
@@ -404,5 +453,29 @@ div
   }
   100% {
     bottom: 0px; /* 올라가는 위치 */
+  }
+}
+
+@keyframes skills {
+  0% {
+    bottom: 0px; /* 애니메이션 시작 위치 */
+  }
+  50% {
+    bottom: 5px; /* 내려가는 끝 위치 */
+  }
+  100% {
+    bottom: 0px; /* 올라가는 위치 */
+  }
+}
+
+@keyframes click-ic {
+  0% {
+    bottom: -75px; /* 애니메이션 시작 위치 */
+  }
+  50% {
+    bottom: -65px; /* 내려가는 끝 위치 */
+  }
+  100% {
+    bottom: -75px; /* 올라가는 위치 */
   }
 }
