@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let closeBtnWhite = document.querySelector(".close-btn-white");
-  let whiteBtn = document.querySelector(".white-btn");
   let menu = document.querySelector(".menu");
+  let whiteBtn = document.querySelector(".white-btn");
   let menuBtn = document.querySelector("#menu-btn");
 
   whiteBtn.addEventListener("click", function () {

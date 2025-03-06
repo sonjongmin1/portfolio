@@ -16,15 +16,27 @@ $("#fullpage").fullpage({
     switch (nextIndex) {
       case 1:
         $(".menu-ln").eq(0).addClass("on");
+        $(".menu").removeClass("on");
+        $(".white-btn").css("display", "block");
+        $("#menu-btn").css("display", "flex");
         break;
       case 2:
         $(".menu-ln").eq(1).addClass("on");
+        $(".menu").removeClass("on");
+        $(".white-btn").css("display", "block");
+        $("#menu-btn").css("display", "flex");
         break;
       case 3:
         $(".menu-ln").eq(2).addClass("on");
+        $(".menu").removeClass("on");
+        $(".white-btn").css("display", "block");
+        $("#menu-btn").css("display", "flex");
         break;
       case 4:
         $(".menu-ln").eq(3).addClass("on");
+        $(".menu").removeClass("on");
+        $(".white-btn").css("display", "block");
+        $("#menu-btn").css("display", "flex");
         break;
       default:
         break;
