@@ -240,10 +240,6 @@ div .section.fp-table.active #nom-2 {
 @media (max-width: 768px) {
   /* <br class="mb-br"/> */
 
-  .de-br {
-    display: none;
-  }
-
   .mb-br {
     display: block;
   }

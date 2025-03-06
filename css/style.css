@@ -173,6 +173,10 @@ a {
 
 /* 모바일 */
 @media (max-width: 768px) {
+  .de-br {
+    display: none;
+  }
+
   .mb-dis-non {
     display: none;
   }

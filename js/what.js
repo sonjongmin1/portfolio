@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Word 관련 이벤트
   word.addEventListener("click", function () {
+    if (window.innerWidth <= 768) {
+      return;
+    }
     word.classList.toggle("on");
     updateCursor(word);
     console.log("word 클릭");
@@ -76,6 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // MOS 관련 이벤트
   mos.addEventListener("click", function () {
+    if (window.innerWidth <= 768) {
+      return;
+    }
     mos.classList.toggle("on");
     updateCursor(mos);
     console.log("mos 클릭");
