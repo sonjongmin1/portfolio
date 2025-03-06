@@ -24,4 +24,23 @@ document.addEventListener("DOMContentLoaded", function () {
       hrModal.classList.remove("on");
     });
   });
+
+  let closeBtnWhite = document.querySelector(".close-btn-white");
+  let whiteBtn = document.querySelector(".white-btn");
+  let menu = document.querySelector(".menu");
+  let menuBtn = document.querySelector("#menu-btn");
+
+  whiteBtn.addEventListener("click", function () {
+    menu.classList.add("on");
+    whiteBtn.style.display = "none";
+    closeBtnWhite.display = "block";
+    menuBtn.style.display = "none";
+  });
+
+  closeBtnWhite.addEventListener("click", function () {
+    menu.classList.remove("on");
+    closeBtnWhite.display = "none";
+    whiteBtn.style.display = "block";
+    menuBtn.style.display = "flex";
+  });
 });
