@@ -163,8 +163,20 @@ a {
   display: none;
 }
 
+.mb-br {
+  display: none;
+}
+
+.mb-dis-non {
+  display: block;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
+  .mb-dis-non {
+    display: none;
+  }
+
   #menu-btn {
     z-index: 1000;
     bottom: -18px;
