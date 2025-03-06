@@ -111,6 +111,7 @@
   }
 
   .st1-box3 {
+    display: block;
     order: 3;
     font-size: 16px;
     padding: 0px 20px 0px 20px;

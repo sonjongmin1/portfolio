@@ -158,6 +158,10 @@ a {
 .what-md-st3 {
   display: none;
 }
+/* 모바일 숨길 태그 */
+.st1-box3 {
+  display: none;
+}
 
 /* 모바일 */
 @media (max-width: 768px) {
