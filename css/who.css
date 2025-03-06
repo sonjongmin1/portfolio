@@ -1,5 +1,5 @@
 #who {
-  background-color: rgb(88, 89, 76);
+  background-color: #58594c;
 }
 
 .who-layout {
@@ -253,10 +253,12 @@ div .section.fp-table.active #nom-2 {
   }
 
   .intro {
+    position: relative;
     width: 100%;
     top: 0;
     right: 0;
     padding: 20px 20px 20px 20px;
+    z-index: 500;
   }
 
   .intro-con > span {
@@ -265,7 +267,7 @@ div .section.fp-table.active #nom-2 {
 
   .intro-txt-nom {
     line-height: 23px;
-    color: #800020;
+    color: rgb(75, 58, 36);
   }
 
   .txt-emp {

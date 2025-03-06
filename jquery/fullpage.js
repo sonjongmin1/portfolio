@@ -18,24 +18,40 @@ $("#fullpage").fullpage({
         $(".menu-ln").eq(0).addClass("on");
         $(".menu").removeClass("on");
         $(".white-btn").css("display", "block");
+        $(".white-btn").css(
+          "background-image",
+          "url('../img/icon/white-menu-btn.svg')"
+        );
         $("#menu-btn").css("display", "flex");
         break;
       case 2:
         $(".menu-ln").eq(1).addClass("on");
         $(".menu").removeClass("on");
         $(".white-btn").css("display", "block");
+        $(".white-btn").css(
+          "background-image",
+          "url('../img/icon/white-menu-btn.svg')"
+        );
         $("#menu-btn").css("display", "flex");
         break;
       case 3:
         $(".menu-ln").eq(2).addClass("on");
         $(".menu").removeClass("on");
         $(".white-btn").css("display", "block");
+        $(".white-btn").css(
+          "background-image",
+          "url('../img/icon/menu-btn-main-col.svg')"
+        );
         $("#menu-btn").css("display", "flex");
         break;
       case 4:
         $(".menu-ln").eq(3).addClass("on");
         $(".menu").removeClass("on");
         $(".white-btn").css("display", "block");
+        $(".white-btn").css(
+          "background-image",
+          "url('../img/icon/white-menu-btn.svg')"
+        );
         $("#menu-btn").css("display", "flex");
         break;
       default:
