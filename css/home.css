@@ -111,7 +111,9 @@
   }
 
   .st1-box3 {
+    position: relative;
     display: block;
+    bottom: 20px;
     order: 3;
     font-size: 16px;
     padding: 0px 20px 0px 20px;
@@ -128,6 +130,9 @@
   }
 
   .st1-cir {
+    top: 0;
+    width: 300px;
+    height: 300px;
     left: 50%;
     transform: translate(-50%);
   }

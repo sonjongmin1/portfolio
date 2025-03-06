@@ -167,7 +167,7 @@ a {
 @media (max-width: 768px) {
   #menu-btn {
     z-index: 1000;
-    bottom: 0;
+    bottom: -18px;
     left: 50%;
     transform: translateX(-50%) rotate(-90deg);
   }
