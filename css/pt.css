@@ -17,6 +17,7 @@ a {
   padding-top: 100px;
   margin: auto;
 }
+
 #our_business h2 {
   display: flex;
   font: 600 3.8rem "Poppins", serif;
@@ -295,6 +296,101 @@ a {
   display: block;
 }
 
+.h4-ln {
+  display: block;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
+  #our_business {
+    width: 100%;
+  }
+
+  .pt-main-txt {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  #title {
+    position: relative;
+    bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  #our_business h2 {
+    font-size: 30px;
+  }
+
+  #btn {
+    display: flex;
+  }
+
+  #btn button {
+    width: 30px;
+    height: 30px;
+  }
+  #btn button:first-child {
+    margin-right: 6px;
+  }
+
+  #btn button:last-child {
+    margin-right: 20px;
+  }
+
+  #slide section {
+    flex-direction: column;
+  }
+
+  #pt-slide {
+    border: 1px solid black;
+  }
+
+  /* 모바일 슬라이드 */
+  #our_business {
+    width: 300px;
+    height: 100vh;
+    padding-top: 100px;
+    margin: auto;
+  }
+
+  #slide {
+    width: 2100px;
+    display: flex;
+    position: relative;
+    margin: auto;
+    left: -300px;
+  }
+  #slide section {
+    width: 300px;
+    height: 60vh;
+    display: flex;
+    opacity: 0.3;
+    transform: scale(0.6);
+    transition: all 1s;
+  }
+
+  #our_business {
+    width: 300px;
+    height: 100vh;
+    padding-top: 100px;
+    margin: auto;
+  }
+
+  /* 모바일 슬라이드 끝 */
+
+  #slide section .pt-st-1 {
+    padding: 0;
+  }
+
+  .h4-ln {
+    width: 30% !important;
+  }
+
+  .pt-st-txt-box {
+    display: none;
+  }
+
+  .pt-st-1 {
+    order: 2;
+  }
 }
