@@ -91,7 +91,7 @@ a {
 }
 
 #slide section .pt-st-1 h4 > .h4-txt {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 400;
   color: #fff;
   padding: 0px 10px 0 10px;
@@ -306,6 +306,10 @@ a {
     width: 100%;
   }
 
+  #slide section .pt-st-1 h4 {
+    margin-bottom: 0;
+  }
+
   .pt-main-txt {
     margin-left: 0;
     margin-right: 20px;
@@ -339,10 +343,6 @@ a {
 
   #slide section {
     flex-direction: column;
-  }
-
-  #pt-slide {
-    border: 1px solid black;
   }
 
   /* 모바일 슬라이드 */
@@ -382,6 +382,10 @@ a {
     padding: 0;
   }
 
+  #slide section .pt-st-1 h3 {
+    font-size: 20px;
+  }
+
   .h4-ln {
     width: 30% !important;
   }
@@ -391,6 +395,48 @@ a {
   }
 
   .pt-st-1 {
+    margin-top: 20px;
     order: 2;
+  }
+
+  .pt-date-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pt-date-box > p {
+    margin: 0 !important;
+  }
+
+  #slide section .pt-st-1 > .ts {
+    font-size: 0px;
+    margin-top: 20px !important;
+    margin: 0;
+  }
+
+  /* 모바일 content */
+  .mb-con {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background-color: #d9d9d9;
+    color: #58594c;
+    font-weight: 600;
+    border-radius: 10px;
+    overflow: auto;
+    font-size: 14px;
+  }
+
+  .ic-box {
+    display: flex;
+  }
+
+  .ic-box > span:first-child {
+    margin-right: 5px;
+  }
+
+  .gb .ic-box {
+    bottom: 0;
   }
 }

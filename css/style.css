@@ -171,8 +171,16 @@ a {
   display: block;
 }
 
+.de-non {
+  display: none;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
+  .de-non {
+    display: block;
+  }
+
   .de-br {
     display: none;
   }
@@ -258,6 +266,5 @@ a {
     height: 68px;
     background-image: url("../img/icon/slide-scroll-ic.png");
   }
-
   /* 모바일 메뉴 반응형 구현 끝 */
 }
