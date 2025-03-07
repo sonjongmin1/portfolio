@@ -177,6 +177,10 @@ a {
 
 /* 모바일 */
 @media (max-width: 768px) {
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
   .de-non {
     display: block;
   }
