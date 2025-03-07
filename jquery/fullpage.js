@@ -52,7 +52,7 @@ $("#fullpage").fullpage({
           "background-image",
           "url('../img/icon/white-menu-btn.svg')"
         );
-        $("#menu-btn").css("display", "flex");
+        $("#menu-btn").css("display", "none");
         break;
       default:
         break;
