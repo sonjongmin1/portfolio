@@ -282,7 +282,7 @@ div .section.fp-table.active .md-st2-db > div > div:last-child {
 div .section.fp-table.active .md-st2-db > div > div > .sql-ic {
   width: 100px;
   height: 100px;
-  background-image: url("../img/lang-ic/mysql.png");
+  background-image: url("../img/lang-ic/sql.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -302,7 +302,7 @@ div .section.fp-table.active .md-st2-db > div > div > .what-md-st2-txt {
 div .section.fp-table.active .md-st2-db > div > div > .sql-certifi {
   width: 240px;
   height: 350px;
-  background-image: url("../img/certifi/sql.png");
+  background-image: url("../img/certifi/sql.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
