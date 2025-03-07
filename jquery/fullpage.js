@@ -3,6 +3,11 @@ $("#fullpage").fullpage({
   menu: "#menu-btn",
   keyboardScrolling: false,
   onLeave: function (index, nextIndex, direction) {
+    $(".white-btn").css({
+      display: "block",
+      zIndex: 9999, // z-index를 높은 값으로 설정
+    });
+
     // 메뉴 항목에 'act' 클래스 추가/제거
     $("#menu-btn >li")
       .eq(nextIndex - 1)
