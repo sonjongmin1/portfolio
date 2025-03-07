@@ -190,7 +190,7 @@ a {
   }
 
   .mb-dis-non {
-    display: none;
+    display: none !important;
   }
 
   #menu-btn {
