@@ -179,6 +179,10 @@ a {
   display: none;
 }
 
+.restart-box {
+  display: none;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
   * {
@@ -283,4 +287,25 @@ a {
     background-image: url("../img/icon/slide-scroll-ic.png");
   }
   /* 모바일 메뉴 반응형 구현 끝 */
+
+  .restart-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restart {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/icon/restart-wt-ic.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5px;
+  }
+
+  .restart-txt {
+    position: relative;
+    font-size: 35px;
+  }
 }

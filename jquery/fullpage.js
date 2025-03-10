@@ -33,6 +33,7 @@ $("#fullpage").fullpage({
           "url('./img/icon/white-menu-btn.svg')"
         );
         $("#menu-btn").css("display", "flex");
+        $(".restart-box").css("display", "none");
         break;
       case 3:
         $(".menu-ln").eq(2).addClass("on");
@@ -43,6 +44,7 @@ $("#fullpage").fullpage({
           "url('./img/icon/menu-btn-main-col.svg')"
         );
         $("#menu-btn").css("display", "flex");
+        $(".restart-box").css("display", "flex");
         break;
       case 4:
         $(".menu-ln").eq(3).addClass("on");
@@ -53,6 +55,7 @@ $("#fullpage").fullpage({
           "url('./img/icon/white-menu-btn.svg')"
         );
         $("#menu-btn").css("display", "none");
+        $(".restart-box").css("display", "none");
         break;
       default:
         break;
