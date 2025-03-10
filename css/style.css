@@ -2,12 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
-
-/* 모든 요소에 Noto Serif 폰트 적용 */
-/* font-family: "Noto Serif", serif;
-  font-weight: 400; /* 기본 굵기 */
-/* font-style: normal; 기본 스타일  */
 
 body {
   width: 100vw;
