@@ -181,14 +181,8 @@ a {
 
 /* 모바일 */
 @media (max-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0; /* 가로 스크롤바도 숨기고 싶으면 height 추가 */
-  }
-
   * {
     -webkit-overflow-scrolling: touch;
-    overflow-x: hidden !important;
   }
 
   .de-non {
@@ -234,10 +228,6 @@ a {
     padding: 20px;
   }
 
-  .white-btn:hover {
-    cursor: pointer;
-  }
-
   /* 모바일 메뉴 반응형 구현 시작 */
   .menu {
     opacity: 0;
@@ -276,10 +266,6 @@ a {
     background-position: center;
     z-index: 100;
     padding: 20px;
-  }
-
-  .menu > .close-btn-white:hover {
-    cursor: pointer;
   }
 
   /* 모바일 스크롤 이미지 */
