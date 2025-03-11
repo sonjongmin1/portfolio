@@ -183,6 +183,10 @@ a {
   display: none;
 }
 
+.restart-txt {
+  display: none;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
   * {
@@ -305,6 +309,7 @@ a {
   }
 
   .restart-txt {
+    display: block;
     position: relative;
     font-size: 35px;
   }
