@@ -186,6 +186,16 @@ a {
 .restart-txt {
   display: none;
 }
+/* 깜박이는효과 */
+.blink {
+  animation: blink 1s step-end 3;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 /* 모바일 */
 @media (max-width: 768px) {
@@ -313,15 +323,8 @@ a {
     position: relative;
     font-size: 35px;
   }
-}
 
-/* 깜빡이는 효과 */
-.blink {
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
+  .blink {
+    animation: none;
   }
 }
