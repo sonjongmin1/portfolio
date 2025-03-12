@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       clearInterval(intervalId);
     }
-  }, 300);
+  }, 500);
 
   hireBtn.addEventListener("click", function () {
     hrModal.classList.toggle("on");
