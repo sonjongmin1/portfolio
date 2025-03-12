@@ -1,5 +1,5 @@
 # 🖥️ PROJECT
-### portfolio
+### Portfolio
 
 ## 🕰️ Project duration / Development 
 ### 2025.02 ~ 2025.03 / Solo Dev 
