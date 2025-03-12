@@ -38,6 +38,7 @@
   font-size: 35px;
   font-weight: bolder;
   margin-bottom: 20px;
+  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
 }
 
 /* 애니메이션 */
@@ -47,6 +48,7 @@ div .section.fp-table.active .intro-txt-emp {
 
 .txt-emp {
   color: rgb(75, 58, 36);
+  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
 }
 
 .intro-txt-nom {
@@ -56,6 +58,7 @@ div .section.fp-table.active .intro-txt-emp {
   font-weight: bolder;
   line-height: 35px;
   margin-bottom: 20px;
+  text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
 }
 
 div .section.fp-table.active #nom-1 {
