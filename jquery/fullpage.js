@@ -23,6 +23,7 @@ $("#fullpage").fullpage({
           "url('./img/icon/white-menu-btn.svg')"
         );
         $("#menu-btn").css("display", "flex");
+        $("#hire-btn").removeClass("blink");
         break;
       case 2:
         $(".menu-ln").eq(1).addClass("on");
@@ -34,6 +35,7 @@ $("#fullpage").fullpage({
         );
         $("#menu-btn").css("display", "flex");
         $(".restart-box").css("display", "none");
+        $("#hire-btn").addClass("blink");
         break;
       case 3:
         $(".menu-ln").eq(2).addClass("on");
@@ -45,6 +47,7 @@ $("#fullpage").fullpage({
         );
         $("#menu-btn").css("display", "flex");
         $(".restart-box").css("display", "flex");
+        $("#hire-btn").removeClass("blink");
         break;
       case 4:
         $(".menu-ln").eq(3).addClass("on");
@@ -56,6 +59,7 @@ $("#fullpage").fullpage({
         );
         $("#menu-btn").css("display", "none");
         $(".restart-box").css("display", "none");
+        $("#hire-btn").addClass("blink");
         break;
       default:
         break;
