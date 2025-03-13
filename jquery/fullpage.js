@@ -9,8 +9,6 @@ $("#fullpage").fullpage({
       .addClass("act")
       .siblings()
       .removeClass("act");
-    console.log(index);
-    console.log("nextIndex" + nextIndex);
 
     $(".menu-ln").removeClass("on");
     switch (nextIndex) {
