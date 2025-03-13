@@ -4,7 +4,6 @@
 
 /* st1-layout */
 .st1-layout {
-  /* display: flex */
   display: none;
   justify-content: center;
   width: 100%;
@@ -76,14 +75,12 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  /* border: 1px solid black; */
 }
 
 .st1-layout2-text {
   display: flex;
   flex-direction: column;
   width: 50%;
-  /* border: 1px solid black; */
 }
 .st1-layout2-text-con1 {
   display: flex;
