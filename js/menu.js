@@ -6,14 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const hrModal = document.querySelector(".hr-modal");
   const cardClBtn = document.querySelectorAll(".card-cl-btn");
 
-  const intervalId = setInterval(function () {
-    if (index < totalItems) {
-      menuItems[index].classList.remove("on");
-      index++;
-    } else {
-      clearInterval(intervalId);
-    }
-  }, 500);
+  setTimeout(() => {
+    const intervalId = setInterval(function () {
+      if (index < totalItems) {
+        menuItems[index].classList.remove("on");
+        index++;
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 500);
+  }, 3000); // 3000ms = 3초 후 실행
 
   hireBtn.addEventListener("click", function () {
     hrModal.classList.toggle("on");

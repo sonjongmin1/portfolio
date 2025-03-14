@@ -27,498 +27,507 @@
     <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.min.js"></script>
   </head>
   <body>
-    <div class="white-btn"></div>
-    <ul class="menu">
-      <li class="on">
-        <a href="#btn-1"
-          >HOME
-          <div class="menu-ln on"></div>
-        </a>
-      </li>
-      <li class="on">
-        <a href="#btn-2"
-          >WHO I AM
-          <div class="menu-ln"></div>
-        </a>
-      </li>
-      <li class="on">
-        <a href="#btn-3"
-          >WHAT I CAN DO
-          <div class="menu-ln"></div>
-        </a>
-      </li>
-      <li class="on">
-        <a href="#btn-4"
-          >PORTFOLIO
-          <div class="menu-ln"></div>
-        </a>
-      </li>
-      <li class="on" id="hire-btn">
-        <a href="#"
-          >HIRE ME!
-          <div class="menu-ln"></div>
-        </a>
-      </li>
-      <div class="close-btn-white"></div>
-    </ul>
-    <ul id="menu-btn">
-      <li class="act"><a href="#btn-1"></a></li>
-      <li><a href="#btn-2"></a></li>
-      <li><a href="#btn-3"></a></li>
-      <li><a href="#btn-4"></a></li>
-    </ul>
-    <div id="fullpage">
-      <!-- Home -->
-      <div class="section" id="home">
-        <div class="st1-layout">
-          <div class="st1-box1">
-            <div class="st1-cir"></div>
-          </div>
-          <div class="st1-box2">
-            <!-- Developer -->
-            <div class="st1-tit">Developer</div>
-            <ul class="st1-con">
-              <!-- HTML -->
-              <li class="st1-html"></li>
-              <!-- CSS -->
-              <li class="st1-css"></li>
-              <!-- SCSS -->
-              <li class="st1-scss"></li>
-              <!-- JavaScript -->
-              <li class="st1-js"></li>
-              <!-- jQuery -->
-              <li class="st1-jq"></li>
-              <!-- React -->
-              <li class="st1-react"></li>
-              <!-- MySQL -->
-              <li class="st1-mysql"></li>
-            </ul>
-          </div>
-          <div class="st1-box3">
-            <strong>"누구나 편리하게"</strong> 사용할 수 있는 서비스를 목표로<br />
-            기술적 도전과 창의적 해결책을 찾아갑니다.
-          </div>
-        </div>
-        <div class="st1-layout2">
-          <div class="st1-layout2-text">
-            <div class="st1-layout2-text-con1">
-              <div class="st1-layout2-text-con1-txt"></div>
-              <div>
-                <div class="github-ic">
-                  <a href="https://github.com/sonjongmin1" target="_blank"></a>
-                </div>
-                <div class="kakao-ic">
-                  <a
-                    href="https://open.kakao.com/o/samtVjih"
-                    target="_blank"
-                  ></a>
-                </div>
-              </div>
+    <video autoplay muted loop id="fullScreenVideo">
+      <source src="./loading/loading.mp4" type="video/mp4" />
+    </video>
+    <div class="lay-out on">
+      <div class="white-btn"></div>
+      <ul class="menu">
+        <li class="on">
+          <a href="#btn-1"
+            >HOME
+            <div class="menu-ln on"></div>
+          </a>
+        </li>
+        <li class="on">
+          <a href="#btn-2"
+            >WHO I AM
+            <div class="menu-ln"></div>
+          </a>
+        </li>
+        <li class="on">
+          <a href="#btn-3"
+            >WHAT I CAN DO
+            <div class="menu-ln"></div>
+          </a>
+        </li>
+        <li class="on">
+          <a href="#btn-4"
+            >PORTFOLIO
+            <div class="menu-ln"></div>
+          </a>
+        </li>
+        <li class="on" id="hire-btn">
+          <a href="#"
+            >HIRE ME!
+            <div class="menu-ln"></div>
+          </a>
+        </li>
+        <div class="close-btn-white"></div>
+      </ul>
+      <ul id="menu-btn">
+        <li class="act"><a href="#btn-1"></a></li>
+        <li><a href="#btn-2"></a></li>
+        <li><a href="#btn-3"></a></li>
+        <li><a href="#btn-4"></a></li>
+      </ul>
+      <div id="fullpage">
+        <!-- Home -->
+        <div class="section" id="home">
+          <div class="st1-layout">
+            <div class="st1-box1">
+              <div class="st1-cir"></div>
             </div>
-            <div class="st1-layout2-text-con2">
-              <div>안녕하세요.</div>
-              <div>프론트엔드 개발자</div>
-              <div><strong>손종민</strong> 입니다.</div>
-            </div>
-          </div>
-          <div class="st1-layout2-pt">
-            <div class="st1-layout2-pt-img"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Who I am -->
-      <div class="section" id="who">
-        <div class="who-layout">
-          <div class="who-st1">
-            <div class="who-pf"></div>
-          </div>
-          <div class="who-st2">
-            <!-- 자기 소개 -->
-            <div class="intro">
-              <div class="intro-con">
-                <span class="intro-txt-emp"> "디테일이 차이를 만든다."</span>
-                <span class="intro-txt-nom" id="nom-1">
-                  프론트엔드 개발은 단순한 기술 사용이 아니라<br
-                    class="mb-br"
-                  />
-                  <span class="txt-emp">사용자와의 ‘대화’</span>라고
-                  생각합니다.<br />
-                  작은 디테일 하나하나가 사용자 경험을 결정짓는 요소라고
-                  생각하며,
-                  <span class="mb-dis-non"
-                    >세심한 설계를<br class="de-br" />
-                    통해 직관적이고 유기적으로 작동하는 웹 환경을 만들기 위해
-                    노력합니다.</span
-                  >
-                </span>
-                <span class="intro-txt-nom" id="nom-2">
-                  <span class="txt-emp"
-                    >매일 기술적 도전과 창의적 해결책을 찾으며,<br />
-                    누구나 편리하게 사용할 수 있는 서비스를 제공하는 것이 제
-                    목표입니다.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <!-- 움직이는 배너 -->
-            <div class="pf-auto">
-              <div class="wrap">
-                <!-- 배너표시영역 -->
-                <div class="rolling-list">
-                  <!-- 원본배너 -->
-                  <ul>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img lin"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2024.10 ~</div>
-                          <div>라인컴퓨터아트학원</div>
-                          <div>웹 프론트엔드 과정</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img bd-uv"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2024.03 ~</div>
-                          <div>방송통신대학교 편입</div>
-                          <div>컴퓨터과학과 재학</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img hj"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2021.03 ~ 2024.01</div>
-                          <div>(주)한진</div>
-                          <div>2년 10개월 근무</div>
-                          <div>영업관리</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img ds"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2019.09 ~ 2020.03</div>
-                          <div>(주)디쉐어</div>
-                          <div>학생 상담 및 행정 업무</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img cj"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2018.02 ~ 2018.08</div>
-                          <div>(주)씨제이푸드빌</div>
-                          <div>고객 응대 및 서비스 업무</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="desc">
-                        <div class="desc-img-box">
-                          <div class="desc-img inha-uv"></div>
-                        </div>
-                        <div class="desc-txt-box">
-                          <div>2015.03 ~ 2021.02</div>
-                          <div>인하공업전문대학</div>
-                          <div>항공경영과 졸업</div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- 움직이는 배너 끝 -->
-            </div>
-          </div>
-          <div class="who-bt"></div>
-        </div>
-      </div>
-      <!-- What I can do -->
-      <div class="section" id="what">
-        <div class="what-st">
-          <div class="restart-box">
-            <div class="restart"></div>
-            <div class="restart-txt">새로고침</div>
-          </div>
-          <div class="what-skills">
-            <div class="what-md-st1">
-              <div class="what-md-st1-txt" id="main-skill">
-                Skills
-                <div class="click-ic-cl"></div>
-              </div>
-            </div>
-            <div></div>
-            <div class="what-game-btn">
-              <span>START</span
-              ><span class="space-btn">
-                게임 시작 후 스페이스바를 눌러보세요
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="what-modal-box on">
-          <div class="what-modal">
-            <div class="what-md-st1">
-              <div class="what-md-st1-txt">Skills</div>
-              <div class="what-md-ub"></div>
-              <div class="what-md-close">
-                <div class="what-md-close-click-ic"></div>
-              </div>
-            </div>
-            <div class="what-md-st2">
-              <div class="on md-st2-lang st">
-                <div>
-                  <div class="md-st2-html"></div>
-                  <div></div>
-                  <div>
-                    • 웹 표준과 시맨틱 태그를 준수하여 구조화된 마크업을 작성할
-                    수 있습니다.
-                  </div>
-                </div>
-                <div>
-                  <div class="md-st2-css"></div>
-                  <div></div>
-                  <div>
-                    • 순수 CSS를 이용한 정교한 레이아웃 설계가 가능합니다.
-                  </div>
-                </div>
-                <div>
-                  <div class="md-st2-js"></div>
-                  <div></div>
-                  <div>
-                    • 최신 ES6+ 문법을 활용하여 가독성과 유지보수가 용이한
-                    코드를 작성할 수 있습니다.
-                  </div>
-                </div>
-              </div>
-              <div class="md-st2-ft st">
-                <div>
-                  <div class="md-st2-react"></div>
-                  <div></div>
-                  <div class="md-st2-ft-con">
-                    • 컴포넌트 기반 설계를 통해 재사용 가능하고 유지보수가 쉬운
-                    UI를 구현합니다. <br />
-                    • React Hooks(useState, useEffect 등)을 사용합니다.<br />
-                    <span class="mb-dis-non"
-                      >• 동적인 UI와데이터 로직을 효과적으로 구현합니다.</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <div class="md-st2-scss"></div>
-                  <div></div>
-                  <div class="md-st2-ft-con">
-                    • SCSS를 활용하여 더 간결하고 유지보수 가능한 스타일 코드를
-                    작성합니다. <br />
-                    • 변수, 믹스인, 함수 등을 활용해 코드의 재사용성을 높일 수
-                    있습니다.<br />
-                    <span class="mb-dis-non">
-                      • @import 및 @include 등을 사용하여 스타일 시트를
-                      모듈화하고 관리합니다.
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="md-st2-db">
-                <div>
-                  <div>
-                    <div class="sql-ic"></div>
-                    <div class="what-md-st2-txt">
-                      <span
-                        >• 기본적인 데이터베이스 설계를 통해 테이블을 생성하고
-                        관리할 수 있습니다.
-                      </span>
-                      <span>
-                        • SQL 문법을 활용하여 데이터 삽입, 조회, 수정, 삭제와
-                        같은 CRUD 작업을 수행할 수 있습니다.
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="sql-certifi" id="sql"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="md-st2-etc">
-                <div>
-                  <div>
-                    <div class="etc-github"></div>
-                    <div class="etc-con">
-                      <p>
-                        • GitHub를 활용하여 버전 관리 및 팀 협업을 진행할 수
-                        있습니다.
-                      </p>
-                      <p class="mb-dis-non">
-                        • GitBoard를 사용하여 프로젝트 진행 상황을 시각적으로
-                        추적하고, 작업의 우선순위 및 마감일을 설정하여 팀 내
-                        효율적인 협업을 이끌어냈습니다.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="etc-word" id="word"></div>
-                    <div class="etc-con">
-                      <p>• 워드프로세서 1급<br />- 2020년 6월 19일 취득</p>
-                      <p>
-                        • 문서 편집, 서식 설정, 데이터 정리와 같은 기본적인 문서
-                        작업 능력을 보유하고 있습니다.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="etc-mos" id="mos"></div>
-                    <div class="etc-con">
-                      <p>
-                        • Microsoft Office Specialist Mater - 2018.10. 20 취득
-                      </p>
-                      <p>
-                        • Word, Excel, PowerPoint, Access<br />문서 작성 및
-                        데이터 처리에서 높은 생산성을 발휘합니다.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="what-md-st3">
-              <ul>
-                <li>
-                  <span>Language</span>
-                  <span>LN</span>
-                </li>
-                <li><span>FrontEnd</span> <span>FE</span></li>
-                <li>
-                  <span>Database</span>
-                  <span>DB</span>
-                </li>
-                <li>
-                  <span>ETC</span>
-                  <span>ETC</span>
-                </li>
+            <div class="st1-box2">
+              <!-- Developer -->
+              <div class="st1-tit">Developer</div>
+              <ul class="st1-con">
+                <!-- HTML -->
+                <li class="st1-html"></li>
+                <!-- CSS -->
+                <li class="st1-css"></li>
+                <!-- SCSS -->
+                <li class="st1-scss"></li>
+                <!-- JavaScript -->
+                <li class="st1-js"></li>
+                <!-- jQuery -->
+                <li class="st1-jq"></li>
+                <!-- React -->
+                <li class="st1-react"></li>
+                <!-- MySQL -->
+                <li class="st1-mysql"></li>
               </ul>
             </div>
+            <div class="st1-box3">
+              <strong>"누구나 편리하게"</strong> 사용할 수 있는 서비스를
+              목표로<br />
+              기술적 도전과 창의적 해결책을 찾아갑니다.
+            </div>
           </div>
-          <div class="sql-modal"></div>
-          <div class="word-modal"></div>
-          <div class="mos-modal"></div>
-        </div>
-      </div>
-      <!-- Portfolio -->
-      <div class="section" id="pt">
-        <div id="our_business">
-          <section id="title">
-            <div class="pt-main-txt">
-              <h2>PORTFOLIO</h2>
-              <h2 id="pt-count">1/7</h2>
-            </div>
-            <div id="btn">
-              <button type="button">〈</button>
-              <button type="button">〉</button>
-            </div>
-          </section>
-          <div id="slide">
-            <!-- 07. Side -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">07. Side Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>Side Project</h3>
-                  <p>2024.10 ~ 2025.12</p>
-                </div>
-                <div class="de-non mb-con">
-                  계산기, 진수 변환, Grid 레이아웃, 지하철 노선도 기능을
-                  만들면서 JavaScript로 로직 처리, DOM 조작, 배열 다루기, CSS로
-                  레이아웃 구성 등을 배운 프로젝트들입니다.
-                </div>
-                <div class="pt-st-txt-box side-pt">
-                  <span
-                    >1. 계산기 및 진수 변환기 프로젝트는 JavaScript를 활용하여
-                    기본적인 계산기와 진수 변환 기능을 구현한 것입니다. 사용자가
-                    입력한 값을 바탕으로 계산 결과와 변환 결과를 출력하는
-                    방식으로, JavaScript의 로직 처리와 UI 상호작용을
-                    학습했습니다
-                    <span class="side-ic">
-                      <span class="side-github-ic"
-                        ><a
-                          href="https://github.com/sonjongmin1/Calculator"
-                          target="_blank"
-                        ></a>
-                      </span>
-                      <span class="side-new-ic">
-                        <a
-                          href="https://sonjongmin1.github.io/Calculator/"
-                          target="_blank"
-                        ></a>
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                    2. Grid 레이아웃 구성 CSS Grid를 사용하여 다양한 레이아웃을
-                    구현해보았습니다. HTML과 CSS의 기본적인 문법을 잘 이해하고,
-                    Grid 시스템을 통해 복잡한 레이아웃을 효율적으로 구성할 수
-                    있는 방법을 익히는 데 중점을 두었습니다.
-                    <span class="side-ic">
-                      <span class="side-github-ic"
-                        ><a
-                          href="https://github.com/sonjongmin1/grid"
-                          target="_blank"
-                        ></a
-                      ></span>
-                      <span class="side-new-ic">
-                        <a
-                          href="https://sonjongmin1.github.io/grid/"
-                          target="_blank"
-                        ></a>
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                    3. 지하철 노선도 프로젝트는 JavaScript를 사용하여 지하철
-                    노선도의 추가, 수정, 삭제 기능을 구현한 것입니다. DOM 조작과
-                    배열, 객체 등을 활용하여 데이터를 처리하는 방법을 학습하고,
-                    다양한 JavaScript 기술을 익혔습니다.
-                    <span class="side-ic">
-                      <span class="side-github-ic"
-                        ><a
-                          href="https://github.com/sonjongmin1/subway"
-                          target="_blank"
-                        ></a
-                      ></span>
-                      <span class="side-new-ic">
-                        <a
-                          href="https://sonjongmin1.github.io/subway/"
-                          target="_blank"
-                        ></a>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
+          <div class="st1-layout2">
+            <div class="st1-layout2-text">
+              <div class="st1-layout2-text-con1">
+                <div class="st1-layout2-text-con1-txt"></div>
+                <div>
+                  <div class="github-ic">
+                    <a
+                      href="https://github.com/sonjongmin1"
+                      target="_blank"
+                    ></a>
                   </div>
-                  <!-- <div class="ic-box">
+                  <div class="kakao-ic">
+                    <a
+                      href="https://open.kakao.com/o/samtVjih"
+                      target="_blank"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="st1-layout2-text-con2">
+                <div>안녕하세요.</div>
+                <div>프론트엔드 개발자</div>
+                <div><strong>손종민</strong> 입니다.</div>
+              </div>
+            </div>
+            <div class="st1-layout2-pt">
+              <div class="st1-layout2-pt-img"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Who I am -->
+        <div class="section" id="who">
+          <div class="who-layout">
+            <div class="who-st1">
+              <div class="who-pf"></div>
+            </div>
+            <div class="who-st2">
+              <!-- 자기 소개 -->
+              <div class="intro">
+                <div class="intro-con">
+                  <span class="intro-txt-emp"> "디테일이 차이를 만든다."</span>
+                  <span class="intro-txt-nom" id="nom-1">
+                    프론트엔드 개발은 단순한 기술 사용이 아니라<br
+                      class="mb-br"
+                    />
+                    <span class="txt-emp">사용자와의 ‘대화’</span>라고
+                    생각합니다.<br />
+                    작은 디테일 하나하나가 사용자 경험을 결정짓는 요소라고
+                    생각하며,
+                    <span class="mb-dis-non"
+                      >세심한 설계를<br class="de-br" />
+                      통해 직관적이고 유기적으로 작동하는 웹 환경을 만들기 위해
+                      노력합니다.</span
+                    >
+                  </span>
+                  <span class="intro-txt-nom" id="nom-2">
+                    <span class="txt-emp"
+                      >매일 기술적 도전과 창의적 해결책을 찾으며,<br />
+                      누구나 편리하게 사용할 수 있는 서비스를 제공하는 것이 제
+                      목표입니다.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <!-- 움직이는 배너 -->
+              <div class="pf-auto">
+                <div class="wrap">
+                  <!-- 배너표시영역 -->
+                  <div class="rolling-list">
+                    <!-- 원본배너 -->
+                    <ul>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img lin"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2024.10 ~</div>
+                            <div>라인컴퓨터아트학원</div>
+                            <div>웹 프론트엔드 과정</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img bd-uv"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2024.03 ~</div>
+                            <div>방송통신대학교 편입</div>
+                            <div>컴퓨터과학과 재학</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img hj"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2021.03 ~ 2024.01</div>
+                            <div>(주)한진</div>
+                            <div>2년 10개월 근무</div>
+                            <div>영업관리</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img ds"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2019.09 ~ 2020.03</div>
+                            <div>(주)디쉐어</div>
+                            <div>학생 상담 및 행정 업무</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img cj"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2018.02 ~ 2018.08</div>
+                            <div>(주)씨제이푸드빌</div>
+                            <div>고객 응대 및 서비스 업무</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="desc">
+                          <div class="desc-img-box">
+                            <div class="desc-img inha-uv"></div>
+                          </div>
+                          <div class="desc-txt-box">
+                            <div>2015.03 ~ 2021.02</div>
+                            <div>인하공업전문대학</div>
+                            <div>항공경영과 졸업</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 움직이는 배너 끝 -->
+              </div>
+            </div>
+            <div class="who-bt"></div>
+          </div>
+        </div>
+        <!-- What I can do -->
+        <div class="section" id="what">
+          <div class="what-st">
+            <div class="restart-box">
+              <div class="restart"></div>
+              <div class="restart-txt">새로고침</div>
+            </div>
+            <div class="what-skills">
+              <div class="what-md-st1">
+                <div class="what-md-st1-txt" id="main-skill">
+                  Skills
+                  <div class="click-ic-cl"></div>
+                </div>
+              </div>
+              <div></div>
+              <div class="what-game-btn">
+                <span>START</span
+                ><span class="space-btn">
+                  게임 시작 후 스페이스바를 눌러보세요
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="what-modal-box on">
+            <div class="what-modal">
+              <div class="what-md-st1">
+                <div class="what-md-st1-txt">Skills</div>
+                <div class="what-md-ub"></div>
+                <div class="what-md-close">
+                  <div class="what-md-close-click-ic"></div>
+                </div>
+              </div>
+              <div class="what-md-st2">
+                <div class="on md-st2-lang st">
+                  <div>
+                    <div class="md-st2-html"></div>
+                    <div></div>
+                    <div>
+                      • 웹 표준과 시맨틱 태그를 준수하여 구조화된 마크업을
+                      작성할 수 있습니다.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="md-st2-css"></div>
+                    <div></div>
+                    <div>
+                      • 순수 CSS를 이용한 정교한 레이아웃 설계가 가능합니다.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="md-st2-js"></div>
+                    <div></div>
+                    <div>
+                      • 최신 ES6+ 문법을 활용하여 가독성과 유지보수가 용이한
+                      코드를 작성할 수 있습니다.
+                    </div>
+                  </div>
+                </div>
+                <div class="md-st2-ft st">
+                  <div>
+                    <div class="md-st2-react"></div>
+                    <div></div>
+                    <div class="md-st2-ft-con">
+                      • 컴포넌트 기반 설계를 통해 재사용 가능하고 유지보수가
+                      쉬운 UI를 구현합니다. <br />
+                      • React Hooks(useState, useEffect 등)을 사용합니다.<br />
+                      <span class="mb-dis-non"
+                        >• 동적인 UI와데이터 로직을 효과적으로 구현합니다.</span
+                      >
+                    </div>
+                  </div>
+                  <div>
+                    <div class="md-st2-scss"></div>
+                    <div></div>
+                    <div class="md-st2-ft-con">
+                      • SCSS를 활용하여 더 간결하고 유지보수 가능한 스타일
+                      코드를 작성합니다. <br />
+                      • 변수, 믹스인, 함수 등을 활용해 코드의 재사용성을 높일 수
+                      있습니다.<br />
+                      <span class="mb-dis-non">
+                        • @import 및 @include 등을 사용하여 스타일 시트를
+                        모듈화하고 관리합니다.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="md-st2-db">
+                  <div>
+                    <div>
+                      <div class="sql-ic"></div>
+                      <div class="what-md-st2-txt">
+                        <span
+                          >• 기본적인 데이터베이스 설계를 통해 테이블을 생성하고
+                          관리할 수 있습니다.
+                        </span>
+                        <span>
+                          • SQL 문법을 활용하여 데이터 삽입, 조회, 수정, 삭제와
+                          같은 CRUD 작업을 수행할 수 있습니다.
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="sql-certifi" id="sql"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md-st2-etc">
+                  <div>
+                    <div>
+                      <div class="etc-github"></div>
+                      <div class="etc-con">
+                        <p>
+                          • GitHub를 활용하여 버전 관리 및 팀 협업을 진행할 수
+                          있습니다.
+                        </p>
+                        <p class="mb-dis-non">
+                          • GitBoard를 사용하여 프로젝트 진행 상황을 시각적으로
+                          추적하고, 작업의 우선순위 및 마감일을 설정하여 팀 내
+                          효율적인 협업을 이끌어냈습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="etc-word" id="word"></div>
+                      <div class="etc-con">
+                        <p>• 워드프로세서 1급<br />- 2020년 6월 19일 취득</p>
+                        <p>
+                          • 문서 편집, 서식 설정, 데이터 정리와 같은 기본적인
+                          문서 작업 능력을 보유하고 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="etc-mos" id="mos"></div>
+                      <div class="etc-con">
+                        <p>
+                          • Microsoft Office Specialist Mater - 2018.10. 20 취득
+                        </p>
+                        <p>
+                          • Word, Excel, PowerPoint, Access<br />문서 작성 및
+                          데이터 처리에서 높은 생산성을 발휘합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="what-md-st3">
+                <ul>
+                  <li>
+                    <span>Language</span>
+                    <span>LN</span>
+                  </li>
+                  <li><span>FrontEnd</span> <span>FE</span></li>
+                  <li>
+                    <span>Database</span>
+                    <span>DB</span>
+                  </li>
+                  <li>
+                    <span>ETC</span>
+                    <span>ETC</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sql-modal"></div>
+            <div class="word-modal"></div>
+            <div class="mos-modal"></div>
+          </div>
+        </div>
+        <!-- Portfolio -->
+        <div class="section" id="pt">
+          <div id="our_business">
+            <section id="title">
+              <div class="pt-main-txt">
+                <h2>PORTFOLIO</h2>
+                <h2 id="pt-count">1/7</h2>
+              </div>
+              <div id="btn">
+                <button type="button">〈</button>
+                <button type="button">〉</button>
+              </div>
+            </section>
+            <div id="slide">
+              <!-- 07. Side -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">07. Side Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>Side Project</h3>
+                    <p>2024.10 ~ 2025.12</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    계산기, 진수 변환, Grid 레이아웃, 지하철 노선도 기능을
+                    만들면서 JavaScript로 로직 처리, DOM 조작, 배열 다루기,
+                    CSS로 레이아웃 구성 등을 배운 프로젝트들입니다.
+                  </div>
+                  <div class="pt-st-txt-box side-pt">
+                    <span
+                      >1. 계산기 및 진수 변환기 프로젝트는 JavaScript를 활용하여
+                      기본적인 계산기와 진수 변환 기능을 구현한 것입니다.
+                      사용자가 입력한 값을 바탕으로 계산 결과와 변환 결과를
+                      출력하는 방식으로, JavaScript의 로직 처리와 UI 상호작용을
+                      학습했습니다
+                      <span class="side-ic">
+                        <span class="side-github-ic"
+                          ><a
+                            href="https://github.com/sonjongmin1/Calculator"
+                            target="_blank"
+                          ></a>
+                        </span>
+                        <span class="side-new-ic">
+                          <a
+                            href="https://sonjongmin1.github.io/Calculator/"
+                            target="_blank"
+                          ></a>
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      2. Grid 레이아웃 구성 CSS Grid를 사용하여 다양한
+                      레이아웃을 구현해보았습니다. HTML과 CSS의 기본적인 문법을
+                      잘 이해하고, Grid 시스템을 통해 복잡한 레이아웃을
+                      효율적으로 구성할 수 있는 방법을 익히는 데 중점을
+                      두었습니다.
+                      <span class="side-ic">
+                        <span class="side-github-ic"
+                          ><a
+                            href="https://github.com/sonjongmin1/grid"
+                            target="_blank"
+                          ></a
+                        ></span>
+                        <span class="side-new-ic">
+                          <a
+                            href="https://sonjongmin1.github.io/grid/"
+                            target="_blank"
+                          ></a>
+                        </span>
+                      </span>
+                    </span>
+                    <span>
+                      3. 지하철 노선도 프로젝트는 JavaScript를 사용하여 지하철
+                      노선도의 추가, 수정, 삭제 기능을 구현한 것입니다. DOM
+                      조작과 배열, 객체 등을 활용하여 데이터를 처리하는 방법을
+                      학습하고, 다양한 JavaScript 기술을 익혔습니다.
+                      <span class="side-ic">
+                        <span class="side-github-ic"
+                          ><a
+                            href="https://github.com/sonjongmin1/subway"
+                            target="_blank"
+                          ></a
+                        ></span>
+                        <span class="side-new-ic">
+                          <a
+                            href="https://sonjongmin1.github.io/subway/"
+                            target="_blank"
+                          ></a>
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="ts">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                    <!-- <div class="ic-box">
                     <span class="github-ic-white">
                       <a href="#" target="_blank"></a>
                     </span>
@@ -526,522 +535,548 @@
                       <a target="_blank" href="#"></a>
                     </span>
                   </div> -->
-                </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container side">
-                    <img src="./img/full-screen/calculator.jpg" alt="계산기" />
-                    <img src="./img/full-screen/subway.jpg" alt="지하철" />
-                    <img src="./img/full-screen/grid.jpg" alt="그리드" />
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- 01. nike -->
-            <section class="active" id="pt-slide">
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">01. Main Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>Nike</h3>
-                  <p>2025.02 ~ 2025.02</p>
-                </div>
-                <div class="de-non mb-con">
-                  나이키 데모 사이트는 React와 Route로 컴포넌트 기반 구조를
-                  구현한 프로젝트입니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span
-                    >나이키 데모 사이트는 React와 Route를 활용하여 메인 페이지
-                    중심의 모바일 반응형 애니메이션과 컴포넌트 기반 구조로
-                    구현된 프로젝트입니다. React의 강점인 컴포넌트 기반
-                    아키텍처를 활용해 각 기능을 독립적이고 모듈화된 형태로
-                    개발함으로써 코드의 재사용성과 유지보수성을 효과적으로
-                    높였습니다.
-                  </span>
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>React</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>SCSS</span>
-                    <span>JavaScript</span>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container side">
+                      <img
+                        src="./img/full-screen/calculator.jpg"
+                        alt="계산기"
+                      />
+                      <img src="./img/full-screen/subway.jpg" alt="지하철" />
+                      <img src="./img/full-screen/grid.jpg" alt="그리드" />
+                    </div>
                   </div>
-                  <div class="ic-box">
-                    <span class="github-ic-white">
-                      <a
-                        href="https://github.com/sonjongmin1/nikeDemo"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Code</span>
-                    </span>
-                    <span class="new-ic">
-                      <a
-                        target="_blank"
-                        href="https://sonjongmin1.github.io/nikeDemo/"
-                      ></a>
-                      <span class="tooltip-text">Link</span>
+                </div>
+              </section>
+              <!-- 01. nike -->
+              <section class="active" id="pt-slide">
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">01. Main Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>Nike</h3>
+                    <p>2025.02 ~ 2025.02</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    나이키 데모 사이트는 React와 Route로 컴포넌트 기반 구조를
+                    구현한 프로젝트입니다.
+                  </div>
+                  <div class="pt-st-txt-box">
+                    <span
+                      >나이키 데모 사이트는 React와 Route를 활용하여 메인 페이지
+                      중심의 모바일 반응형 애니메이션과 컴포넌트 기반 구조로
+                      구현된 프로젝트입니다. React의 강점인 컴포넌트 기반
+                      아키텍처를 활용해 각 기능을 독립적이고 모듈화된 형태로
+                      개발함으로써 코드의 재사용성과 유지보수성을 효과적으로
+                      높였습니다.
                     </span>
                   </div>
-                </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container hygi">
-                    <img src="./img/full-screen/nike.jpg" alt="작업물 2" />
+                  <div class="ts">
+                    <div>
+                      <span>React</span>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>SCSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="github-ic-white">
+                        <a
+                          href="https://github.com/sonjongmin1/nikeDemo"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Code</span>
+                      </span>
+                      <span class="new-ic">
+                        <a
+                          target="_blank"
+                          href="https://sonjongmin1.github.io/nikeDemo/"
+                        ></a>
+                        <span class="tooltip-text">Link</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- 02. soop -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">02. Main Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>Soop</h3>
-                  <p>2024.10 ~ 2024.11</p>
-                </div>
-                <div class="de-non mb-con">
-                  Soop 데모 사이트는 HTML, CSS, JavaScript로 개발된 반응형
-                  미디어 플랫폼으로, 다양한 콘텐츠를 직관적으로 탐색할 수 있는
-                  사용자 경험을 제공합니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span>
-                    Soop 데모 사이트는 마우스 호버 시 메뉴들이 예상대로 나타나지
-                    않아 많은 시행착오가 있었습니다. Soop 사이트의 HTML 구조를
-                    하나씩 뜯어보며 문제를 해결할 수 있었습니다. 그 결과 숨겨진
-                    div 메뉴바 원리를 발견하여 이를 적용했고, 문제를 잘 해결할
-                    수 있었습니다. 슬라이드 기능은 setInterval과 clearInterval을
-                    사용하여 자동 슬라이드를 제어했고, 사용자가 클릭 이벤트로
-                    탭을 전환하거나 이동 방향을 지정할 수 있도록 로직을
-                    설계했습니다. 이를 통해 JavaScript의 배열 메서드와 조건문을
-                    효과적으로 활용할 수 있었습니다. 반응형 웹 디자인을 적용하여
-                    데스크톱과 모바일 환경 모두에서 슬라이드 이동 크기가 적절히
-                    조정되도록 했습니다. 다양한 디바이스에서도 동일하게 보일 수
-                    있도록 했습니다. 또한, 스크롤 이벤트를 활용하여 메뉴바의
-                    디자인을 동적으로 변경하도록 했습니다. 사용자가 페이지를
-                    스크롤할 때 메뉴바의 색상과 이미지를 변화시켜, 시각적으로 더
-                    편리한 사용자 경험을 제공했습니다. 결국, 이 프로젝트를 통해
-                    HTML 구조 설계, CSS 레이아웃 구성, JavaScript 이벤트 처리 및
-                    DOM 조작 등의 웹 개발 기술을 실습하고 익히는 데 큰 도움이
-                    되었습니다.</span
-                  >
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                  </div>
-                  <div class="ic-box">
-                    <span class="github-ic-white"
-                      ><a
-                        href="https://github.com/sonjongmin1/soopDemoWebSite"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Code</span>
-                    </span>
-                    <span class="new-ic"
-                      ><a
-                        target="_blank"
-                        href="https://sonjongmin1.github.io/soopDemoWebSite/"
-                      ></a>
-                      <span class="tooltip-text">Link</span>
-                    </span>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container hygi">
+                      <img src="./img/full-screen/nike.jpg" alt="작업물 2" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container soop">
-                    <img src="./img/full-screen/soop.jpg" alt="작업물 1" />
+              </section>
+              <!-- 02. soop -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">02. Main Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>Soop</h3>
+                    <p>2024.10 ~ 2024.11</p>
                   </div>
-                </div>
-              </div>
-            </section>
-            <!-- 03. portfolio -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">03. Main Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>Portfolio</h3>
-                  <p>2025.02 ~ 2025.03</p>
-                </div>
-                <div class="de-non mb-con">
-                  포트폴리오는 HTML, CSS, Canvas, JavaScript, jQuery로
-                  제작되었습니다. Canvas로 귀여운 캐릭터 애니메이션을 구현하고,
-                  jQuery로 슬라이드 형식으로 구성해 탐색이 용이합니다.
-                  직관적이고 깔끔한 디자인에 독창적인 요소들이 포함되어
-                  있습니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span
-                    >저의 자기소개와 개발자로서의 역량을 담아내기 위해 HTML,
-                    CSS, Canvas, JavaScript, 그리고 jQuery를 활용하여
-                    제작되었습니다. 깔끔하고 직관적인 디자인을 바탕으로,
-                    사용자가 즐겁게 탐색할 수 있는 독특한 요소들을 포함했습니다.
-                    특히, Canvas를 활용해 귀여운 캐릭터가 화살을 쏘는 독창적인
-                    애니메이션을 구현하였으며, 캐릭터는 화살을 쏠 때마다 랜덤한
-                    이미지와 효과가 나타나도록 설계되어 사용자에게 재미있고
-                    예상치 못한 경험을 제공합니다. jQuery를 이용해 포트폴리오를
-                    슬라이드 형식으로 구성하여, 방문자가 다양한 프로젝트를
-                    손쉽게 넘겨보며 살펴볼 수 있도록 했습니다. 이 슬라이드
-                    기능은 각 포트폴리오의 세부사항을 직관적이고 편리하게 탐색할
-                    수 있게 하였습니다. CSS로 전체 레이아웃과 스타일을 깔끔하게
-                    정리했으며, 디자인과 세부 사항에 많은 시간과 노력을 기울여
-                    더 나은 결과물을 만들기 위해 최선을 다했습니다.</span
-                  >
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Canvas</span>
-                    <span>JavaScript</span>
-                    <span>jQuery</span>
+                  <div class="de-non mb-con">
+                    Soop 데모 사이트는 HTML, CSS, JavaScript로 개발된 반응형
+                    미디어 플랫폼으로, 다양한 콘텐츠를 직관적으로 탐색할 수 있는
+                    사용자 경험을 제공합니다.
                   </div>
-                  <div class="ic-box">
-                    <span class="github-ic-white">
-                      <a
-                        href="https://github.com/sonjongmin1/portfolio"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Code</span>
-                    </span>
-                    <span class="new-ic">
-                      <a
-                        target="_blank"
-                        href="https://sonjongmin1.github.io/portfolio/"
-                      ></a>
-                      <span class="tooltip-text">Link</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container hygi">
-                    <img src="./img/full-screen/main-pt1.jpg" alt="작업물 2" />
-                    <img src="./img/full-screen/main-pt2.jpg" alt="작업물 2" />
-                    <img src="./img/full-screen/main-pt3.jpg" alt="작업물 2" />
-                    <img src="./img/full-screen/main-pt4.jpg" alt="작업물 2" />
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- 04. 형지 엘리트 -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">04. Main Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>HyungiElite</h3>
-                  <p>2025.01 ~ 2025.01</p>
-                </div>
-                <div class="de-non mb-con">
-                  형지엘리트 데모 사이트는 CSS와 JavaScript를 활용한 애니메이션
-                  효과로 사용자 경험을 향상시킨 데스크탑 버전 프로젝트입니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span
-                    >형지엘리트 데모 사이트는 다양한 애니메이션 효과를 적용해
-                    사용자 경험을 풍부하게 만든 프로젝트입니다. CSS와
-                    JavaScript를 활용하여 부드러운 인터랙션과 동적인 요소들을
-                    구현했으며, 페이지 내의 애니메이션 전환이 강조된 디자인을
-                    통해 직관적인 탐색이 가능하게 했습니다. 이 프로젝트는
-                    데스크탑 버전으로만 구현되었으며, 시각적으로 매력적인
-                    요소들이 사이트를 더욱 돋보이게 합니다.</span
-                  >
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                  </div>
-                  <div class="ic-box">
-                    <span class="github-ic-white">
-                      <a
-                        href="https://github.com/sonjongmin1/HyungiElite"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Code</span>
-                    </span>
-                    <span class="new-ic mb-dis-non">
-                      <a
-                        target="_blank"
-                        href="https://sonjongmin1.github.io/HyungiElite/"
-                      ></a>
-                      <span class="tooltip-text">Link</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container hygi">
-                    <img
-                      src="./img/full-screen/hyungielite.jpg"
-                      alt="작업물 2"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- 05. Team Project -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">05. Team Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>TouristWebsite</h3>
-                  <p>2025.02 ~ 2025.02</p>
-                </div>
-                <div class="de-non mb-con">
-                  한국 사계절 관광 로드맵 웹사이트는 팀원들과 협업하여 계절별
-                  애니메이션, 날씨 효과, 반응형 디자인을 적용한 프로젝트입니다.
-                  GitHub 보드와 Google Docs, Discord로 효율적으로 협업하며
-                  기술적 성장과 협업 능력을 향상시켰습니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span
-                    >팀원들과 협업하여 각 계절의 특징을 살린 웹사이트를 개발한
-                    프로젝트입니다. 이 프로젝트에서 저는 GitHub 사용법 교육과
-                    Git 충돌 방지 시스템 구축에 중요한 역할을 했습니다. 팀원들이
-                    Git을 처음 사용했기 때문에, GitHub 계정 생성부터 리포지토리
-                    클론 방법, 브랜치 생성 및 병합 과정, 커밋 메시지 작성
-                    규칙까지 단계별로 세부적으로 교육을 진행했습니다.<br />
-                    특히 브랜치 전략을 명확히 하여 각 팀원이 자신의 기능
-                    브랜치에서 작업하고, main 브랜치와의 병합 시 Pull Request를
-                    생성하여 작업 내용을 팀원들과 공유하고 확인할 수 있도록
-                    했습니다. 그러나 팀원들이 다양한 상황에서 어려움을 겪으며
-                    Git 충돌이 발생하기도 했습니다. 예를 들어, 두 명의 팀원이
-                    동일한 파일을 수정했을 때 충돌이 발생했으나, 이를 해결하며
-                    Git 사용에 대한 경험을 쌓을 수 있었습니다.<br /><br />
-                    Git 충돌을 미리 예방하기 위해 역할 분배와 프로세스를 명확히
-                    설정했습니다. 구체적으로, 기능 개발에 대한 책임을
-                    나누었습니다. 예를 들어, 한 팀원은 메인 페이지 애니메이션을
-                    담당하고, 다른 팀원은 서브 페이지 날씨 효과 구현을
-                    맡았습니다. 이를 통해 각 팀원이 자신에게 할당된 작업에
-                    집중할 수 있도록 했습니다. 또한, 작업을 명확히 구분하여 각
-                    기능을 독립적인 브랜치에서 작업하도록 했고, 병합 시 Pull
-                    Request를 사용해 작업 내용을 공유하고 확인할 수 있게
-                    했습니다. 이 과정에서 팀원들이 작업이 겹치지 않도록
-                    실시간으로 GitBoard에서 작업 상황을 관리하고, 작업 중복을
-                    방지했습니다.<br />
-                    또한, Git 충돌을 방지하기 위해 병합 전 충분한 커뮤니케이션을
-                    강조했으며, 중간에 발생할 수 있는 충돌을 미리 예상하고
-                    조치를 취했습니다. 예를 들어, 메인 페이지 디자인을 수정하는
-                    팀원들 간에는 미리 조율을 통해 각자 작업 범위를 명확히 하여
-                    충돌을 최소화했습니다.<br /><br />
-                    저는 프로젝트 기획부터 최종 발표까지 적극적으로 참여했고,
-                    웹사이트의 다양한 애니메이션과 UI 설계에 중점을 두었습니다.
-                    메인 페이지에서는 계절별 이미지 전환과 타이핑 효과를
-                    추가하여 사용자의 시각적 흥미를 끌었으며, 서브 페이지에서는
-                    계절별 날씨 효과(벚꽃, 비, 눈 등)를 구현하여 몰입감 있는
-                    사용자 경험을 제공했습니다. 반응형 웹 디자인을 적용하여 PC와
-                    모바일에서 최적화된 웹사이트를 구현했습니다.<br />
-                    GitHub 보드와 Google Docs, Discord를 활용한 효율적인 협업
-                    덕분에 프로젝트를 체계적으로 진행할 수 있었으며, 각자의
-                    역할을 충실히 수행한 결과 의미 있는 성과를 이루어낼 수
-                    있었습니다. 이 프로젝트는 기술적인 성장은 물론, Git과 버전
-                    관리 시스템을 실용적으로 학습하는 데 큰 도움이 되었고, 협업
-                    능력을 향상시키는 데도 기여했습니다.</span
-                  >
-                </div>
-                <div class="ts">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>jQuery</span>
-                    <span>Canvas</span>
-                    <span>API</span>
-                  </div>
-                  <div class="ic-box">
-                    <span class="figma-ic">
-                      <a
-                        href="https://www.figma.com/design/UJvlJfl3GAIeJC55IWn7KQ/%EC%A0%80%EA%B8%B0%EB%A7%8C%EC%9D%B4%EA%B8%B0%EC%A1%B0?node-id=0-1&m=dev&t=KW4Sm9TYgXppm26i-1"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Figma</span>
-                    </span>
-                    <span class="github-ic-white">
-                      <a
-                        href="https://github.com/sonjongmin1/TouristWebsite"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Code</span>
-                    </span>
-                    <span class="new-ic"
-                      ><a
-                        href=" https://sonjongmin1.github.io/TouristWebsite/"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">Link</span></span
+                  <div class="pt-st-txt-box">
+                    <span>
+                      Soop 데모 사이트는 마우스 호버 시 메뉴들이 예상대로
+                      나타나지 않아 많은 시행착오가 있었습니다. Soop 사이트의
+                      HTML 구조를 하나씩 뜯어보며 문제를 해결할 수 있었습니다.
+                      그 결과 숨겨진 div 메뉴바 원리를 발견하여 이를 적용했고,
+                      문제를 잘 해결할 수 있었습니다. 슬라이드 기능은
+                      setInterval과 clearInterval을 사용하여 자동 슬라이드를
+                      제어했고, 사용자가 클릭 이벤트로 탭을 전환하거나 이동
+                      방향을 지정할 수 있도록 로직을 설계했습니다. 이를 통해
+                      JavaScript의 배열 메서드와 조건문을 효과적으로 활용할 수
+                      있었습니다. 반응형 웹 디자인을 적용하여 데스크톱과 모바일
+                      환경 모두에서 슬라이드 이동 크기가 적절히 조정되도록
+                      했습니다. 다양한 디바이스에서도 동일하게 보일 수 있도록
+                      했습니다. 또한, 스크롤 이벤트를 활용하여 메뉴바의 디자인을
+                      동적으로 변경하도록 했습니다. 사용자가 페이지를 스크롤할
+                      때 메뉴바의 색상과 이미지를 변화시켜, 시각적으로 더 편리한
+                      사용자 경험을 제공했습니다. 결국, 이 프로젝트를 통해 HTML
+                      구조 설계, CSS 레이아웃 구성, JavaScript 이벤트 처리 및
+                      DOM 조작 등의 웹 개발 기술을 실습하고 익히는 데 큰 도움이
+                      되었습니다.</span
                     >
                   </div>
-                </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container tour-web">
-                    <img
-                      src="./img/full-screen/tourist-website.jpg"
-                      alt="작업물 1"
-                    />
+                  <div class="ts">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="github-ic-white"
+                        ><a
+                          href="https://github.com/sonjongmin1/soopDemoWebSite"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Code</span>
+                      </span>
+                      <span class="new-ic"
+                        ><a
+                          target="_blank"
+                          href="https://sonjongmin1.github.io/soopDemoWebSite/"
+                        ></a>
+                        <span class="tooltip-text">Link</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
-            <!-- 06. 방명록 -->
-            <section>
-              <div class="pt-st-1">
-                <h4>
-                  <span class="h4-txt">06. Main Project</span
-                  ><span class="h4-ln"></span>
-                </h4>
-                <div class="pt-date-box">
-                  <h3>Guestbook</h3>
-                  <p>2025.02 ~ 2025.02</p>
-                </div>
-                <div class="de-non mb-con">
-                  동적인 방명록 웹사이트를 개발한 개인 프로젝트로, Node.js,
-                  Express, MySQL, Docker를 활용해 프론트엔드와 백엔드를 모두
-                  다루었으며, Google Cloud Platform에 배포하여 실제 운영
-                  환경에서도 작동합니다.
-                </div>
-                <div class="pt-st-txt-box">
-                  <span
-                    >이 프로젝트는 사용자가 메시지를 남길 수 있는 동적인 방명록
-                    웹사이트를 개발한 개인 프로젝트입니다. 기획부터 구현,
-                    배포까지 전 과정을 혼자서 진행하였으며, 프론트엔드와
-                    백엔드를 모두 다뤄보는 경험을 얻을 수 있었습니다. 웹사이트는
-                    직관적이고 깔끔한 UI를 제공하며, 사용자가 메시지를 쉽게 남길
-                    수 있도록 설계되었습니다. 메인 페이지에서는 사용자가 입력한
-                    메시지가 실시간으로 화면에 동적으로 출력되는 기능을
-                    구현하였고, 작성된 메시지를 목록으로 불러오는 기능을
-                    추가하여 사용자 경험을 향상시켰습니다. 또한, 반응형 웹
-                    디자인을 적용하여 PC와 모바일 환경에서 모두 최적화된 화면을
-                    제공하며, MySQL 데이터베이스를 사용하여 데이터를 안정적으로
-                    저장하고 관리했습니다. 서버는 Node.js와 Express로
-                    구축하였고, Docker를 활용하여 개발 환경을 컨테이너화하여
-                    일관된 테스트 및 배포 환경을 구축했습니다. 프로젝트는 Google
-                    Cloud Platform에 배포하여 실제 운영 환경에서도 안정적으로
-                    작동합니다. 이 프로젝트를 통해 Node.js와 Express를 사용해
-                    백엔드를 설계하고, MySQL 데이터베이스를 활용해 데이터를
-                    효율적으로 관리하는 방법을 학습했습니다. 또한, Docker를
-                    활용해 컨테이너 기반의 환경 설정을 체험하며 개발 환경의
-                    일관성과 배포 과정을 이해하는 데 큰 도움을 받았습니다.
-                    프로젝트를 진행하며 실제로 작동하는 애플리케이션을
-                    구현해보는 경험을 통해 웹 개발의 전반적인 흐름을 배우고,
-                    스스로 문제를 해결하는 능력을 키울 수 있었습니다.</span
-                  >
-                </div>
-                <div class="ts gb">
-                  <div>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>Express</span>
-                  </div>
-                  <div>
-                    <span>GCP</span>
-                    <span>Docker</span>
-                    <span>MySQL</span>
-                  </div>
-                  <div class="ic-box">
-                    <span class="gcp-ic">
-                      <a
-                        href="https://storage.googleapis.com/guest-book-jm-29/index.html"
-                        target="_blank"
-                      ></a>
-                      <span class="tooltip-text">GCP</span>
-                    </span>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container soop">
+                      <img src="./img/full-screen/soop.jpg" alt="작업물 1" />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="pt-imgBox">
-                <div class="pt-imgBox-sd"></div>
-                <div class="mockup">
-                  <div class="scroll-container gcp">
-                    <img
-                      src="./img/full-screen/guest-book.jpg"
-                      alt="작업물 1"
-                    />
+              </section>
+              <!-- 03. portfolio -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">03. Main Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>Portfolio</h3>
+                    <p>2025.02 ~ 2025.03</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    포트폴리오는 HTML, CSS, Canvas, JavaScript, jQuery로
+                    제작되었습니다. Canvas로 귀여운 캐릭터 애니메이션을
+                    구현하고, jQuery로 슬라이드 형식으로 구성해 탐색이
+                    용이합니다. 직관적이고 깔끔한 디자인에 독창적인 요소들이
+                    포함되어 있습니다.
+                  </div>
+                  <div class="pt-st-txt-box">
+                    <span
+                      >저의 자기소개와 개발자로서의 역량을 담아내기 위해 HTML,
+                      CSS, Canvas, JavaScript, 그리고 jQuery를 활용하여
+                      제작되었습니다. 깔끔하고 직관적인 디자인을 바탕으로,
+                      사용자가 즐겁게 탐색할 수 있는 독특한 요소들을
+                      포함했습니다. 특히, Canvas를 활용해 귀여운 캐릭터가 화살을
+                      쏘는 독창적인 애니메이션을 구현하였으며, 캐릭터는 화살을
+                      쏠 때마다 랜덤한 이미지와 효과가 나타나도록 설계되어
+                      사용자에게 재미있고 예상치 못한 경험을 제공합니다.
+                      jQuery를 이용해 포트폴리오를 슬라이드 형식으로 구성하여,
+                      방문자가 다양한 프로젝트를 손쉽게 넘겨보며 살펴볼 수
+                      있도록 했습니다. 이 슬라이드 기능은 각 포트폴리오의
+                      세부사항을 직관적이고 편리하게 탐색할 수 있게 하였습니다.
+                      CSS로 전체 레이아웃과 스타일을 깔끔하게 정리했으며,
+                      디자인과 세부 사항에 많은 시간과 노력을 기울여 더 나은
+                      결과물을 만들기 위해 최선을 다했습니다.</span
+                    >
+                  </div>
+                  <div class="ts">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>Canvas</span>
+                      <span>JavaScript</span>
+                      <span>jQuery</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="github-ic-white">
+                        <a
+                          href="https://github.com/sonjongmin1/portfolio"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Code</span>
+                      </span>
+                      <span class="new-ic">
+                        <a
+                          target="_blank"
+                          href="https://sonjongmin1.github.io/portfolio/"
+                        ></a>
+                        <span class="tooltip-text">Link</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container hygi">
+                      <img
+                        src="./img/full-screen/main-pt1.jpg"
+                        alt="작업물 2"
+                      />
+                      <img
+                        src="./img/full-screen/main-pt2.jpg"
+                        alt="작업물 2"
+                      />
+                      <img
+                        src="./img/full-screen/main-pt3.jpg"
+                        alt="작업물 2"
+                      />
+                      <img
+                        src="./img/full-screen/main-pt4.jpg"
+                        alt="작업물 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- 04. 형지 엘리트 -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">04. Main Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>HyungiElite</h3>
+                    <p>2025.01 ~ 2025.01</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    형지엘리트 데모 사이트는 CSS와 JavaScript를 활용한
+                    애니메이션 효과로 사용자 경험을 향상시킨 데스크탑 버전
+                    프로젝트입니다.
+                  </div>
+                  <div class="pt-st-txt-box">
+                    <span
+                      >형지엘리트 데모 사이트는 다양한 애니메이션 효과를 적용해
+                      사용자 경험을 풍부하게 만든 프로젝트입니다. CSS와
+                      JavaScript를 활용하여 부드러운 인터랙션과 동적인 요소들을
+                      구현했으며, 페이지 내의 애니메이션 전환이 강조된 디자인을
+                      통해 직관적인 탐색이 가능하게 했습니다. 이 프로젝트는
+                      데스크탑 버전으로만 구현되었으며, 시각적으로 매력적인
+                      요소들이 사이트를 더욱 돋보이게 합니다.</span
+                    >
+                  </div>
+                  <div class="ts">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="github-ic-white">
+                        <a
+                          href="https://github.com/sonjongmin1/HyungiElite"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Code</span>
+                      </span>
+                      <span class="new-ic mb-dis-non">
+                        <a
+                          target="_blank"
+                          href="https://sonjongmin1.github.io/HyungiElite/"
+                        ></a>
+                        <span class="tooltip-text">Link</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container hygi">
+                      <img
+                        src="./img/full-screen/hyungielite.jpg"
+                        alt="작업물 2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- 05. Team Project -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">05. Team Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>TouristWebsite</h3>
+                    <p>2025.02 ~ 2025.02</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    한국 사계절 관광 로드맵 웹사이트는 팀원들과 협업하여 계절별
+                    애니메이션, 날씨 효과, 반응형 디자인을 적용한
+                    프로젝트입니다. GitHub 보드와 Google Docs, Discord로
+                    효율적으로 협업하며 기술적 성장과 협업 능력을
+                    향상시켰습니다.
+                  </div>
+                  <div class="pt-st-txt-box">
+                    <span
+                      >팀원들과 협업하여 각 계절의 특징을 살린 웹사이트를 개발한
+                      프로젝트입니다. 이 프로젝트에서 저는 GitHub 사용법 교육과
+                      Git 충돌 방지 시스템 구축에 중요한 역할을 했습니다.
+                      팀원들이 Git을 처음 사용했기 때문에, GitHub 계정 생성부터
+                      리포지토리 클론 방법, 브랜치 생성 및 병합 과정, 커밋
+                      메시지 작성 규칙까지 단계별로 세부적으로 교육을
+                      진행했습니다.<br />
+                      특히 브랜치 전략을 명확히 하여 각 팀원이 자신의 기능
+                      브랜치에서 작업하고, main 브랜치와의 병합 시 Pull
+                      Request를 생성하여 작업 내용을 팀원들과 공유하고 확인할 수
+                      있도록 했습니다. 그러나 팀원들이 다양한 상황에서 어려움을
+                      겪으며 Git 충돌이 발생하기도 했습니다. 예를 들어, 두 명의
+                      팀원이 동일한 파일을 수정했을 때 충돌이 발생했으나, 이를
+                      해결하며 Git 사용에 대한 경험을 쌓을 수 있었습니다.<br /><br />
+                      Git 충돌을 미리 예방하기 위해 역할 분배와 프로세스를
+                      명확히 설정했습니다. 구체적으로, 기능 개발에 대한 책임을
+                      나누었습니다. 예를 들어, 한 팀원은 메인 페이지
+                      애니메이션을 담당하고, 다른 팀원은 서브 페이지 날씨 효과
+                      구현을 맡았습니다. 이를 통해 각 팀원이 자신에게 할당된
+                      작업에 집중할 수 있도록 했습니다. 또한, 작업을 명확히
+                      구분하여 각 기능을 독립적인 브랜치에서 작업하도록 했고,
+                      병합 시 Pull Request를 사용해 작업 내용을 공유하고 확인할
+                      수 있게 했습니다. 이 과정에서 팀원들이 작업이 겹치지
+                      않도록 실시간으로 GitBoard에서 작업 상황을 관리하고, 작업
+                      중복을 방지했습니다.<br />
+                      또한, Git 충돌을 방지하기 위해 병합 전 충분한
+                      커뮤니케이션을 강조했으며, 중간에 발생할 수 있는 충돌을
+                      미리 예상하고 조치를 취했습니다. 예를 들어, 메인 페이지
+                      디자인을 수정하는 팀원들 간에는 미리 조율을 통해 각자 작업
+                      범위를 명확히 하여 충돌을 최소화했습니다.<br /><br />
+                      저는 프로젝트 기획부터 최종 발표까지 적극적으로 참여했고,
+                      웹사이트의 다양한 애니메이션과 UI 설계에 중점을
+                      두었습니다. 메인 페이지에서는 계절별 이미지 전환과 타이핑
+                      효과를 추가하여 사용자의 시각적 흥미를 끌었으며, 서브
+                      페이지에서는 계절별 날씨 효과(벚꽃, 비, 눈 등)를 구현하여
+                      몰입감 있는 사용자 경험을 제공했습니다. 반응형 웹 디자인을
+                      적용하여 PC와 모바일에서 최적화된 웹사이트를
+                      구현했습니다.<br />
+                      GitHub 보드와 Google Docs, Discord를 활용한 효율적인 협업
+                      덕분에 프로젝트를 체계적으로 진행할 수 있었으며, 각자의
+                      역할을 충실히 수행한 결과 의미 있는 성과를 이루어낼 수
+                      있었습니다. 이 프로젝트는 기술적인 성장은 물론, Git과 버전
+                      관리 시스템을 실용적으로 학습하는 데 큰 도움이 되었고,
+                      협업 능력을 향상시키는 데도 기여했습니다.</span
+                    >
+                  </div>
+                  <div class="ts">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                      <span>jQuery</span>
+                      <span>Canvas</span>
+                      <span>API</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="figma-ic">
+                        <a
+                          href="https://www.figma.com/design/UJvlJfl3GAIeJC55IWn7KQ/%EC%A0%80%EA%B8%B0%EB%A7%8C%EC%9D%B4%EA%B8%B0%EC%A1%B0?node-id=0-1&m=dev&t=KW4Sm9TYgXppm26i-1"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Figma</span>
+                      </span>
+                      <span class="github-ic-white">
+                        <a
+                          href="https://github.com/sonjongmin1/TouristWebsite"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Code</span>
+                      </span>
+                      <span class="new-ic"
+                        ><a
+                          href=" https://sonjongmin1.github.io/TouristWebsite/"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">Link</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container tour-web">
+                      <img
+                        src="./img/full-screen/tourist-website.jpg"
+                        alt="작업물 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- 06. 방명록 -->
+              <section>
+                <div class="pt-st-1">
+                  <h4>
+                    <span class="h4-txt">06. Main Project</span
+                    ><span class="h4-ln"></span>
+                  </h4>
+                  <div class="pt-date-box">
+                    <h3>Guestbook</h3>
+                    <p>2025.02 ~ 2025.02</p>
+                  </div>
+                  <div class="de-non mb-con">
+                    동적인 방명록 웹사이트를 개발한 개인 프로젝트로, Node.js,
+                    Express, MySQL, Docker를 활용해 프론트엔드와 백엔드를 모두
+                    다루었으며, Google Cloud Platform에 배포하여 실제 운영
+                    환경에서도 작동합니다.
+                  </div>
+                  <div class="pt-st-txt-box">
+                    <span
+                      >이 프로젝트는 사용자가 메시지를 남길 수 있는 동적인
+                      방명록 웹사이트를 개발한 개인 프로젝트입니다. 기획부터
+                      구현, 배포까지 전 과정을 혼자서 진행하였으며, 프론트엔드와
+                      백엔드를 모두 다뤄보는 경험을 얻을 수 있었습니다.
+                      웹사이트는 직관적이고 깔끔한 UI를 제공하며, 사용자가
+                      메시지를 쉽게 남길 수 있도록 설계되었습니다. 메인
+                      페이지에서는 사용자가 입력한 메시지가 실시간으로 화면에
+                      동적으로 출력되는 기능을 구현하였고, 작성된 메시지를
+                      목록으로 불러오는 기능을 추가하여 사용자 경험을
+                      향상시켰습니다. 또한, 반응형 웹 디자인을 적용하여 PC와
+                      모바일 환경에서 모두 최적화된 화면을 제공하며, MySQL
+                      데이터베이스를 사용하여 데이터를 안정적으로 저장하고
+                      관리했습니다. 서버는 Node.js와 Express로 구축하였고,
+                      Docker를 활용하여 개발 환경을 컨테이너화하여 일관된 테스트
+                      및 배포 환경을 구축했습니다. 프로젝트는 Google Cloud
+                      Platform에 배포하여 실제 운영 환경에서도 안정적으로
+                      작동합니다. 이 프로젝트를 통해 Node.js와 Express를 사용해
+                      백엔드를 설계하고, MySQL 데이터베이스를 활용해 데이터를
+                      효율적으로 관리하는 방법을 학습했습니다. 또한, Docker를
+                      활용해 컨테이너 기반의 환경 설정을 체험하며 개발 환경의
+                      일관성과 배포 과정을 이해하는 데 큰 도움을 받았습니다.
+                      프로젝트를 진행하며 실제로 작동하는 애플리케이션을
+                      구현해보는 경험을 통해 웹 개발의 전반적인 흐름을 배우고,
+                      스스로 문제를 해결하는 능력을 키울 수 있었습니다.</span
+                    >
+                  </div>
+                  <div class="ts gb">
+                    <div>
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                      <span>Node.js</span>
+                      <span>Express</span>
+                    </div>
+                    <div>
+                      <span>GCP</span>
+                      <span>Docker</span>
+                      <span>MySQL</span>
+                    </div>
+                    <div class="ic-box">
+                      <span class="gcp-ic">
+                        <a
+                          href="https://storage.googleapis.com/guest-book-jm-29/index.html"
+                          target="_blank"
+                        ></a>
+                        <span class="tooltip-text">GCP</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-imgBox">
+                  <div class="pt-imgBox-sd"></div>
+                  <div class="mockup">
+                    <div class="scroll-container gcp">
+                      <img
+                        src="./img/full-screen/guest-book.jpg"
+                        alt="작업물 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- 스크롤 이미지 -->
-    <div class="scroll-icon"></div>
-    <!-- hire me 카드 이미지 -->
-    <div class="hr-modal">
-      <div class="card-container">
-        <div class="card">
-          <div class="card-face front">
-            <div class="card-cl-btn ft"></div>
-            <div class="card-fc-st1">
-              <div class="card-fc-txt">1</div>
-              <div class="card-fc-txt">9</div>
-              <div class="card-fc-img"></div>
-              <div class="card-fc-txt">9</div>
-              <div class="card-fc-txt">6</div>
+      <!-- 스크롤 이미지 -->
+      <div class="scroll-icon"></div>
+      <!-- hire me 카드 이미지 -->
+      <div class="hr-modal">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-face front">
+              <div class="card-cl-btn ft"></div>
+              <div class="card-fc-st1">
+                <div class="card-fc-txt">1</div>
+                <div class="card-fc-txt">9</div>
+                <div class="card-fc-img"></div>
+                <div class="card-fc-txt">9</div>
+                <div class="card-fc-txt">6</div>
+              </div>
+              <div class="card-fc-st2">FRONTEND DEVELOPER</div>
             </div>
-            <div class="card-fc-st2">FRONTEND DEVELOPER</div>
-          </div>
-          <div class="card-face back">
-            <div class="card-cl-btn bc"></div>
-            <div class="tack" data-fixed="false"></div>
-            <div class="card-bc-st1">
-              <div class="card-bc-txt bc-pd">SON JONG MIN</div>
-              <div class="card-bc-txt bc-pd">Frontend Developer</div>
-              <div class="card-bc-txt bc-pd ab-txt1">
-                <span class="card-bc-txt-sm">E : </span
-                ><span class="card-bc-txt-sm"> whdals0525@gmail.com </span>
-              </div>
-              <div class="card-bc-txt bc-pd ab-txt2">
-                <span class="card-bc-txt-sm">M : </span
-                ><span class="card-bc-txt-sm">010-3122-8127</span>
-              </div>
-            </div>
-            <div class="card-bc-st2">
-              <div class="card-bc-img-box">
-                <div class="card-bc-img"></div>
-              </div>
-              <div class="bc-ic">
-                <div class="new-ic"><a href="#"></a></div>
-                <div class="github-ic">
-                  <a href="https://github.com/sonjongmin1" target="_blank"></a>
+            <div class="card-face back">
+              <div class="card-cl-btn bc"></div>
+              <div class="tack" data-fixed="false"></div>
+              <div class="card-bc-st1">
+                <div class="card-bc-txt bc-pd">SON JONG MIN</div>
+                <div class="card-bc-txt bc-pd">Frontend Developer</div>
+                <div class="card-bc-txt bc-pd ab-txt1">
+                  <span class="card-bc-txt-sm">E : </span
+                  ><span class="card-bc-txt-sm"> whdals0525@gmail.com </span>
                 </div>
-                <div class="kakao-ic">
-                  <a href="https://open.kakao.com/o/samtVjih"></a>
+                <div class="card-bc-txt bc-pd ab-txt2">
+                  <span class="card-bc-txt-sm">M : </span
+                  ><span class="card-bc-txt-sm">010-3122-8127</span>
+                </div>
+              </div>
+              <div class="card-bc-st2">
+                <div class="card-bc-img-box">
+                  <div class="card-bc-img"></div>
+                </div>
+                <div class="bc-ic">
+                  <div class="new-ic"><a href="#"></a></div>
+                  <div class="github-ic">
+                    <a
+                      href="https://github.com/sonjongmin1"
+                      target="_blank"
+                    ></a>
+                  </div>
+                  <div class="kakao-ic">
+                    <a href="https://open.kakao.com/o/samtVjih"></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1059,5 +1094,6 @@
     <script src="js/canvas.js"></script>
     <script src="js/scroll-auto.js"></script>
     <script src="js/typing.js"></script>
+    <script src="js/loading.js"></script>
   </body>
 </html>
