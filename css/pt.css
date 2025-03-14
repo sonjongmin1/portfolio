@@ -59,6 +59,7 @@ a {
   font-size: 22px;
 }
 #btn button:hover {
+  cursor: pointer;
   background-color: rgb(89, 108, 101);
   color: white;
 }
