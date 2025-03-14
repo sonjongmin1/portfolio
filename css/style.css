@@ -188,7 +188,7 @@ a {
 }
 /* 깜박이는효과 */
 .blink {
-  animation: blink 1s step-end 3;
+  animation: blink 0.6s step-start infinite;
 }
 
 @keyframes blink {
